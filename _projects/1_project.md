@@ -36,14 +36,14 @@ flowchart TD
 %% -------------------- DATA ACQUISITION --------------------
 subgraph A[Data Acquisition]
     A1[64-channel EEG<br/>10-10 layout]
-    A4[Sampling: 500 Hz<br/>Impedance below 10 kΩ]
+    A4[Sampling: 500 Hz<br/>Impedance below 10 kOhm]
     A1 -->  A4
 end
 
 %% -------------------- PREPROCESSING --------------------
 subgraph B[Signal cleaning]
-    B1[Downsampling <br/>500 → 250 Hz]
-    B2[Filtering <br> Band-pass filter: 0.1–30 Hz <br> Notch filter: 50 Hz]
+    B1[Downsampling <br/>500 -> 250 Hz]
+    B2[Filtering <br/> Band-pass filter: 0.1–30 Hz <br/> Notch filter: 50 Hz]
     B4[Compute vertical & horizontal EOG signals<br/>from ocular electrodes]
     B6[Interpolate noisy channels:<br/>spherical spline]
     B8[Remove ocular artifacts:<br/>ICA decomposition on all channels: <br/> and removal of ocular compoents]
@@ -68,7 +68,7 @@ end
 
 %% -------------------- AVERAGING --------------------
 subgraph E[Averaging]
-    C3[Reject segments > |200| µV peak-to-peak]
+    C3[Reject segments > |200| uV peak-to-peak]
     E1[Average by subject (n=24) and conditions (m=4)]
     C3 --> E1 --> E2
 end
