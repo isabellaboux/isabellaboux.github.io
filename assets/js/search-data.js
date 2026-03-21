@@ -409,8 +409,8 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-instantaneous-emotion-sharing",
-          title: 'Instantaneous Emotion Sharing',
+          section: "News",},{id: "projects-eeg-bases-of-instantaneous-emotion-sharing-via-language",
+          title: 'EEG Bases of Instantaneous Emotion Sharing via Language',
           description: "EEG-based detection of communicative intent in language",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
