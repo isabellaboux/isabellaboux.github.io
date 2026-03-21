@@ -33,63 +33,55 @@ Can we detect *communicative intent* (e.g., expressing emotion vs stating facts)
 ```mermaid
 flowchart TD
 
-%% -------------------- DATA ACQUISITION --------------------
 subgraph A[Data Acquisition]
     A1[64-channel EEG<br/>10-10 layout]
     A4[Sampling: 500 Hz<br/>Impedance below 10 kOhm]
-    A1 -->  A4
+    A1 --> A4
 end
 
-%% -------------------- PREPROCESSING --------------------
 subgraph B[Signal cleaning]
-    B1[Downsampling <br/>500 -> 250 Hz]
-    B2[Filtering <br/> Band-pass filter: 0.1–30 Hz <br/> Notch filter: 50 Hz]
-    B4[Compute vertical & horizontal EOG signals<br/>from ocular electrodes]
-    B6[Interpolate noisy channels:<br/>spherical spline]
-    B8[Remove ocular artifacts:<br/>ICA decomposition on all channels: <br/> and removal of ocular compoents]
+    B1[Downsampling<br/>500 -> 250 Hz]
+    B2[Filtering<br/>Band-pass filter: 0.1-30 Hz<br/>Notch filter: 50 Hz]
+    B4[Compute vertical and horizontal EOG signals<br/>from ocular electrodes]
+    B6[Interpolate noisy channels<br/>spherical spline]
+    B8[ICA decomposition<br/>Remove ocular components]
     B1 --> B2 --> B4 --> B6 --> B8
 end
 
-%% -------------------- EPOCHING --------------------
-subgraph C[Signal segmentation (Epoching) / version 1]
+subgraph C[Signal segmentation - version 1]
     C1[Segment data<br/>-100 to +800 ms]
     C2[Baseline correction<br/>-100 to 0 ms]
-    
     C1 --> C2
 end
 
-%% -------------------- ALTERNATIVE PIPELINE --------------------
-subgraph D[Signal segmentation (Epoching) / version 2]
+subgraph D[Signal segmentation - version 2]
     D1[High-pass filter<br/>1 Hz]
     D2[Segment data<br/>-2100 to +800 ms]
     D3[Baseline correction<br/>-2100 to -1900 ms]
     D1 --> D2 --> D3
 end
 
-%% -------------------- AVERAGING --------------------
 subgraph E[Averaging]
-    C3[Reject segments > |200| uV peak-to-peak]
-    E1[Average by subject (n=24) and conditions (m=4)]
-    C3 --> E1
+    C3[Reject segments > 200 uV peak-to-peak]
+    E1[Average by subject<br/>n=24, m=4 conditions]
+    E2[Grand average across subjects]
+    C3 --> E1 --> E2
 end
 
-%% -------------------- FEATURE EXTRACTION --------------------
 subgraph F[Feature Extraction]
-    F1[Detect ERP peaks:<br/>FWHM method]
-    F3[Extract data from 4 time windows:<br/>TW1: 76–100 ms<br/>TW2: 110–130 ms<br/>TW3: 143–197 ms<br/>TW4: 221–279 ms]
-    G1[Extract data from 9 locations:<br/>anterior/left, anterior midline, anterior/right<br/>central/left, central/midline, central/right, <br/>posterior/left, posterior/midline, posterior/right]
+    F1[Detect ERP peaks<br/>FWHM method]
+    F3[Extract 4 time windows<br/>TW1: 76-100 ms<br/>TW2: 110-130 ms<br/>TW3: 143-197 ms<br/>TW4: 221-279 ms]
+    G1[Extract 9 spatial locations<br/>anterior-left, anterior-midline, anterior-right<br/>central-left, central-midline, central-right<br/>posterior-left, posterior-midline, posterior-right]
     F1 --> F3 --> G1
 end
 
-%% -------------------- STATISTICAL ANALYSIS --------------------
 subgraph H[Statistical Analysis]
-    H1[Checks for gaussian distribution:<br/>Shapiro-Wilk test]
-    H2[rmANOVA:<br/>2 Person x<br/>2 Adjective x<br/>3 Gradient x<br/>3 Laterality]
-    H6[Post-hoc tests<br/>with Bonferroni correction]
+    H1[Check Gaussian distribution<br/>Shapiro-Wilk test]
+    H2[rmANOVA<br/>2 Person x 2 Adjective x 3 Gradient x 3 Laterality]
+    H6[Post-hoc tests<br/>Bonferroni correction]
     H1 --> H2 --> H6
 end
 
-%% -------------------- FLOW CONNECTIONS --------------------
 A --> B --> C --> E
 B --> D --> E
 E --> F --> H
