@@ -4,7 +4,7 @@ title: Instantaneous Emotion Sharing
 description: EEG-based detection of communicative intent in language
 img: assets/img/exSA_FIG3A.jpg
 importance: 1
-category: research
+category: work
 related_publications: true
 ---
 
