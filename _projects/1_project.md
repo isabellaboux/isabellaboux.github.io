@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Instantaneous Emotion Sharing
+title: EEG Bases of Instantaneous Emotion Sharing via Language
 description: EEG-based detection of communicative intent in language
 img: assets/img/exSA_FIG3A.jpg
 importance: 1
