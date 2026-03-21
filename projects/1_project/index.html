@@ -5,14 +5,14 @@
 %% -------------------- DATA ACQUISITION --------------------
 subgraph A[Data Acquisition]
     A1[64-channel EEG&lt;br/&gt;10-10 layout]
-    A4[Sampling: 500 Hz&lt;br/&gt;Impedance below 10 kΩ]
+    A4[Sampling: 500 Hz&lt;br/&gt;Impedance below 10 kOhm]
     A1 --&gt;  A4
 end
 
 %% -------------------- PREPROCESSING --------------------
 subgraph B[Signal cleaning]
-    B1[Downsampling &lt;br/&gt;500 → 250 Hz]
-    B2[Filtering &lt;br&gt; Band-pass filter: 0.1–30 Hz &lt;br&gt; Notch filter: 50 Hz]
+    B1[Downsampling &lt;br/&gt;500 -&gt; 250 Hz]
+    B2[Filtering &lt;br/&gt; Band-pass filter: 0.1–30 Hz &lt;br/&gt; Notch filter: 50 Hz]
     B4[Compute vertical &amp; horizontal EOG signals&lt;br/&gt;from ocular electrodes]
     B6[Interpolate noisy channels:&lt;br/&gt;spherical spline]
     B8[Remove ocular artifacts:&lt;br/&gt;ICA decomposition on all channels: &lt;br/&gt; and removal of ocular compoents]
@@ -37,7 +37,7 @@ end
 
 %% -------------------- AVERAGING --------------------
 subgraph E[Averaging]
-    C3[Reject segments &gt; |200| µV peak-to-peak]
+    C3[Reject segments &gt; |200| uV peak-to-peak]
     E1[Average by subject (n=24) and conditions (m=4)]
     C3 --&gt; E1 --&gt; E2
 end
