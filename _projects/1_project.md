@@ -70,7 +70,7 @@ end
 subgraph E[Averaging]
     C3[Reject segments > |200| uV peak-to-peak]
     E1[Average by subject (n=24) and conditions (m=4)]
-    C3 --> E1 --> E2
+    C3 --> E1
 end
 
 %% -------------------- FEATURE EXTRACTION --------------------
