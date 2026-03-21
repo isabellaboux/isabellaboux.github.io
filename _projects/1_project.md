@@ -7,6 +7,9 @@ importance: 1
 category: work
 related_publications:
   - boux_instantaneous_2026
+mermaid:
+  enabled: true
+  zoomable: true
 ---
 
 ### Problem
