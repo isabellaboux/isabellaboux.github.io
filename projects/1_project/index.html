@@ -2,63 +2,55 @@
     initTheme();
   </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Isabella</span> Boux </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">Projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">EEG Bases of Instantaneous Emotion Sharing via Language</h1> <p class="post-description">EEG-based detection of communicative intent in language</p> </header> <article> <h3 id="problem">Problem</h3> <p>Can we detect <em>communicative intent</em> (e.g., expressing emotion vs stating facts) directly from elecrophysiological brain signals (EEG) — and how early does this differenciation occurs in the language comprehension process?</p> <hr> <h3 id="dataset">Dataset</h3> <ul> <li> <strong>Participants:</strong> 24 subjects (after exclusions)</li> <li> <strong>Signals:</strong> 64-channel electroencephalography (EEG)</li> <li> <strong>Sampling rate:</strong> 500 Hz</li> <li> <strong>Trials:</strong> ~270+ per subject (balanced across conditions)</li> <li> <strong>Conditions (2×2 design):</strong> <ul> <li>Person: 1st vs 3rd</li> <li>Adjective: emotional vs physical</li> </ul> </li> <li> <strong>Labels (derived):</strong> <ul> <li>Expressive (emotion-sharing)</li> <li>Assertive (fact-reporting)</li> </ul> </li> </ul> <hr> <h3 id="preprocessing-pipeline">Preprocessing Pipeline</h3> <pre><code class="language-mermaid">flowchart TD
 
-%% -------------------- DATA ACQUISITION --------------------
 subgraph A[Data Acquisition]
     A1[64-channel EEG&lt;br/&gt;10-10 layout]
     A4[Sampling: 500 Hz&lt;br/&gt;Impedance below 10 kOhm]
-    A1 --&gt;  A4
+    A1 --&gt; A4
 end
 
-%% -------------------- PREPROCESSING --------------------
 subgraph B[Signal cleaning]
-    B1[Downsampling &lt;br/&gt;500 -&gt; 250 Hz]
-    B2[Filtering &lt;br/&gt; Band-pass filter: 0.1–30 Hz &lt;br/&gt; Notch filter: 50 Hz]
-    B4[Compute vertical &amp; horizontal EOG signals&lt;br/&gt;from ocular electrodes]
-    B6[Interpolate noisy channels:&lt;br/&gt;spherical spline]
-    B8[Remove ocular artifacts:&lt;br/&gt;ICA decomposition on all channels: &lt;br/&gt; and removal of ocular compoents]
+    B1[Downsampling&lt;br/&gt;500 -&gt; 250 Hz]
+    B2[Filtering&lt;br/&gt;Band-pass filter: 0.1-30 Hz&lt;br/&gt;Notch filter: 50 Hz]
+    B4[Compute vertical and horizontal EOG signals&lt;br/&gt;from ocular electrodes]
+    B6[Interpolate noisy channels&lt;br/&gt;spherical spline]
+    B8[ICA decomposition&lt;br/&gt;Remove ocular components]
     B1 --&gt; B2 --&gt; B4 --&gt; B6 --&gt; B8
 end
 
-%% -------------------- EPOCHING --------------------
-subgraph C[Signal segmentation (Epoching) / version 1]
+subgraph C[Signal segmentation - version 1]
     C1[Segment data&lt;br/&gt;-100 to +800 ms]
     C2[Baseline correction&lt;br/&gt;-100 to 0 ms]
-    
     C1 --&gt; C2
 end
 
-%% -------------------- ALTERNATIVE PIPELINE --------------------
-subgraph D[Signal segmentation (Epoching) / version 2]
+subgraph D[Signal segmentation - version 2]
     D1[High-pass filter&lt;br/&gt;1 Hz]
     D2[Segment data&lt;br/&gt;-2100 to +800 ms]
     D3[Baseline correction&lt;br/&gt;-2100 to -1900 ms]
     D1 --&gt; D2 --&gt; D3
 end
 
-%% -------------------- AVERAGING --------------------
 subgraph E[Averaging]
-    C3[Reject segments &gt; |200| uV peak-to-peak]
-    E1[Average by subject (n=24) and conditions (m=4)]
-    C3 --&gt; E1
+    C3[Reject segments &gt; 200 uV peak-to-peak]
+    E1[Average by subject&lt;br/&gt;n=24, m=4 conditions]
+    E2[Grand average across subjects]
+    C3 --&gt; E1 --&gt; E2
 end
 
-%% -------------------- FEATURE EXTRACTION --------------------
 subgraph F[Feature Extraction]
-    F1[Detect ERP peaks:&lt;br/&gt;FWHM method]
-    F3[Extract data from 4 time windows:&lt;br/&gt;TW1: 76–100 ms&lt;br/&gt;TW2: 110–130 ms&lt;br/&gt;TW3: 143–197 ms&lt;br/&gt;TW4: 221–279 ms]
-    G1[Extract data from 9 locations:&lt;br/&gt;anterior/left, anterior midline, anterior/right&lt;br/&gt;central/left, central/midline, central/right, &lt;br/&gt;posterior/left, posterior/midline, posterior/right]
+    F1[Detect ERP peaks&lt;br/&gt;FWHM method]
+    F3[Extract 4 time windows&lt;br/&gt;TW1: 76-100 ms&lt;br/&gt;TW2: 110-130 ms&lt;br/&gt;TW3: 143-197 ms&lt;br/&gt;TW4: 221-279 ms]
+    G1[Extract 9 spatial locations&lt;br/&gt;anterior-left, anterior-midline, anterior-right&lt;br/&gt;central-left, central-midline, central-right&lt;br/&gt;posterior-left, posterior-midline, posterior-right]
     F1 --&gt; F3 --&gt; G1
 end
 
-%% -------------------- STATISTICAL ANALYSIS --------------------
 subgraph H[Statistical Analysis]
-    H1[Checks for gaussian distribution:&lt;br/&gt;Shapiro-Wilk test]
-    H2[rmANOVA:&lt;br/&gt;2 Person x&lt;br/&gt;2 Adjective x&lt;br/&gt;3 Gradient x&lt;br/&gt;3 Laterality]
-    H6[Post-hoc tests&lt;br/&gt;with Bonferroni correction]
+    H1[Check Gaussian distribution&lt;br/&gt;Shapiro-Wilk test]
+    H2[rmANOVA&lt;br/&gt;2 Person x 2 Adjective x 3 Gradient x 3 Laterality]
+    H6[Post-hoc tests&lt;br/&gt;Bonferroni correction]
     H1 --&gt; H2 --&gt; H6
 end
 
-%% -------------------- FLOW CONNECTIONS --------------------
 A --&gt; B --&gt; C --&gt; E
 B --&gt; D --&gt; E
 E --&gt; F --&gt; H
