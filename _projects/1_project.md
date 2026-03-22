@@ -33,6 +33,12 @@ Can we detect *communicative intent* (e.g., expressing emotion vs stating facts)
 
 ### Preprocessing Pipeline
 
+
+```mermaid
+flowchart TD
+A[Test] --> B[Works]
+```
+
 ```mermaid
 flowchart TD
 
