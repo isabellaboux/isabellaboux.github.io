@@ -22,7 +22,8 @@
         "Secured Ethics Board approval for conducting experimental studies on human subjects.",
         "Applied for funding",
         "Managed the projects' timeline and team, including training of junior memebers",
-        "Taught 8 courses in on Neurolinguistics and Experimental Methods in Psychology to over 120 students."]
+        "Taught 8 courses in on Neurolinguistics and Experimental Methods in Psychology to over 120 students.",
+        "Supervised 10 studends in the conduction of their empirical bachelor thesis projects."]
     },
 
     {
@@ -31,7 +32,6 @@
       "location": "Berlin, Germany",
       "startDate": "2017-10-01",
       "endDate": "2023-07-31",
-      "summary": "...",
       "highlights": [
         "Implementation from inception to publication of four research projects involving controlled experiments in the field of human cognitive neuroscience.",
         "Ensured data quality across the full lifecycle—from experimental design and data collection to post-collection validation.",
@@ -40,14 +40,14 @@
         "Taught 7 courses on Neurolinguistics and in Linguistics to over 200 students."]
     },
           {
-      "name": "Heurosphere UG",
+      "name": "Neurosphere UG",
       "position": "Data Analyst & Scientific Assistant (Minijob)",
       "location": "Berlin, Germany",
       "startDate": "2018-11-01",
       "endDate": "2019-05-15",
       "summary": "Startup company producing a wearable EEG-based neurofeedback tool for relaxation training.",
       "highlights": [
-        "Analyzed neurophysiological time-series data, including frequency-domain (short fourier trandform) using Python and prototyped interactive data visualizations to improve user experience",
+        "Analyzed neurophysiological time-series data, including frequency-domain (short fourier trandform) using Python and prototyped interactive data visualizations to improve user experience.",
         "Produced analyses of quantitative survey data to measure product satisfaction and evaluation of user experience with Google Sheets.",
         "Contributed website content translating technical scientific information into accessible language for a broad audience."]
     },
@@ -58,9 +58,9 @@
       "startDate": "2015-04-01",
       "endDate": "2017-07-31",
       "highlights": [
-        "Preprocessed neurophysiological and neuroanatomical data with Matlab (Fieldtrip) and ImageJ",
+        "Preprocessed neurophysiological and neuroanatomical data with Matlab (Fieldtrip) and ImageJ.",
         "Programmed computerized experiments with Matlab (Psychtoolbox), ensuring the synchronized operation of data collection devices (e.g., MRI scanner, eye-tracking device, button boxes and experimental task computers) for reliable multi-modal collection of human behavioral and neural data.",
-        "Collected data from over  55 human participants, including recruitement, MRI safety screening and data collection in MRI/fMRI, EEG, pupillometry and behavioral experiment"]
+        "Collected data from over  55 human participants, including recruitement, MRI safety screening and data collection in MRI/fMRI, EEG, pupillometry and behavioral experiment."]
     }
   ],
   "education": [
@@ -68,10 +68,12 @@
       "institution": "Free University Berlin",
       "location": "Berlin, Germany",
       "url": "https://www.fu-berlin.de/",
-      "area": "Cognitive Neuroscience",
+      "area": "Linguistics (with a focus on Cognitive Neuroscience of Language)",
       "studyType": "PhD",
       "startDate": "2017-10-01",
       "endDate": "2023-10-08",
+      "thesis": "Communication beyond form: how the brain processes communicative intention",
+      "thesisUrl": "https://refubium.fu-berlin.de/bitstream/handle/fub188/41404/Dissertation_Boux.pdf?sequence=3&isAllowed=ys",
       "score": "",
       "courses": [],
       "highlights": []
@@ -187,15 +189,16 @@
       "Hypothesis testing",
       "ANOVA",
       "t-tests",
-      "Correlation analysis",
+      "Correlation",
       "Linear regression",
       "Logistic regression",
-      "Hierarchical linear modeling"
+      "Hierarchical linear modeling / Linear mixed modeling"
     ]
   },
   {
     "name": "Neurotechnology & Experimental Methods",
     "keywords": [
+      "Transcranial magnetic stimulation",
       "EEG analysis",
       "ERP analysis",
       "ICA (artifact removal)",
