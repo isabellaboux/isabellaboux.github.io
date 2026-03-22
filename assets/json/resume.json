@@ -94,20 +94,103 @@
     }
   ],
   "skills": [
-    {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
+  {
+    "name": "Programming",
+    "keywords": [
+      "Python",
+      "R",
+      "Matlab",
+      "SQL"
+    ]
+  },
+  {
+    "name": "Python Ecosystem",
+    "keywords": [
+      "NumPy",
+      "Pandas",
+      "Scikit-learn",
+      "XGBoost",
+      "Statsmodels",
+      "Seaborn",
+      "Matplotlib",
+      "Plotly",
+      "PyTorch",
+      "MNE-Python",
+      "PsychoPy"
+    ]
+  },
+  {
+    "name": "R Ecosystem",
+    "keywords": [
+      "dplyr",
+      "tidyverse",
+      "ggplot2",
+      "lme4"
+    ]
+  },
+  {
+    "name": "Data Science & Analysis",
+    "keywords": [
+      "Time-series analysis",
+      "Signal processing",
+      "Feature engineering",
+      "Data visualization",
+      "Statistical modeling",
+      "Real-world human data"
+    ]
+  },
+  {
+    "name": "Machine Learning & AI",
+    "keywords": [
+      "Linear regression",
+      "Logistic regression",
+      "Decision trees",
+      "Random forests",
+      "AdaBoost",
+      "XGBoost",
+      "Dimensionality reduction (PCA)",
+      "Clustering (k-means)",
+      "Deep neural networks (DNNs)",
+      "Convolutional neural networks (CNNs)",
+      "Large language models (LLMs)",
+      "Retrieval-augmented generation (RAG)",
+      "Model fine-tuning"
+    ]
+  },
+  {
+    "name": "Statistics & Inference",
+    "keywords": [
+      "Hypothesis testing",
+      "ANOVA",
+      "t-tests",
+      "Correlation analysis",
+      "Linear regression",
+      "Logistic regression",
+      "Hierarchical linear modeling"
+    ]
+  },
+  {
+    "name": "Neurotechnology & Experimental Methods",
+    "keywords": [
+      "EEG analysis",
+      "ERP analysis",
+      "ICA (artifact removal)",
+      "Multichannel signal analysis",
+      "Experimental design",
+      "Causal inference via controlled experiments"
+    ]
+  },
+  {
+    "name": "Tools & Software",
+    "keywords": [
+      "SPSS",
+      "STATISTICA",
+      "Jamovi",
+      "Microsoft Excel",
+      "Google Sheets"
+    ]
+  }
+],
   "languages": [
     {
       "language": "Italian",
