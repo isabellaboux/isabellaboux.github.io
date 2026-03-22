@@ -4,11 +4,8 @@
     "label": "Data Scientist | Cognitive Neuroscientist | Linguist",
     "image": "",
     "email": "einstein@example.com",
-    "phone": "",
     "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
     "location": {
-      "address": "",
-      "postalCode": "",
       "city": "Berlin",
       "countryCode": "DE"
     },
@@ -22,7 +19,7 @@
       "startDate": "2023-08-01",
       "endDate": "2025-09-30",
       "summary": "...",
-      "highlights": ["EEG", "teaching", "linear-mixed-models", "inferential statistics"]
+      "highlights": ["Description 1.", "Description 2."]
     },
     {
       "name": "Free University Berlin",
@@ -30,22 +27,17 @@
       "location": "Berlin, Germany",
       "startDate": "2017-10-01",
       "endDate": "2023-07-31",
-      "summary": "",
+      "summary": "...",
       "highlights": ["Description 1.", "Description 2."]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": [
-        "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.",
-        "Men of the year 2014 by Time magazine"
-      ]
+    },
+        {
+      "name": "Max Planck Institute for Human Development",
+      "position": "Research Assistant",
+      "location": "Berlin, Germany",
+      "startDate": "2015-04-01",
+      "endDate": "2017-07-31",
+      "summary": "...",
+      "highlights": ["Description 1.", "Description 2."]
     }
   ],
   "education": [
@@ -71,35 +63,34 @@
       "score": "",
       "courses": [],
       "highlights": []
+    },
+        {
+      "institution": "Université de Tours François Rabelais",
+      "location": "Tours, France",
+      "url": "https://international.univ-tours.fr/",
+      "area": "Biology",
+      "studyType": "Bachelor of Science",
+      "startDate": "2010-09-01",
+      "endDate": "2013-07-31",
+      "score": "",
+      "courses": [],
+      "highlights": []
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to those who have conferred the greatest benefit to humankind."
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-location-dot"
+      "title": "Doctoral scholarship",
+      "date": "2017",
+      "awarder": "Enistein Center for Neurosciences",
+      "url": "https://www.ecn-berlin.de/home.html",
+      "summary": "Received ~35K EUR for cunducting research in the field of Neurosciences in Berlin."
     },
-    {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-envelope"
+        {
+      "title": "Teaching award (co-recipient)",
+      "date": "2024",
+      "awarder": "Philosophical Faculty of the RWTH AAchen University",
+      "url": "https://blog.rwth-aachen.de/ifp/2024/07/17/lehrpreis-2024-an-dr-rachel-brown-und-dr-isabella-boux/",
+      "summary": "The proze was awarded for the course 'Experimentalpsychologisches Praktikum', recognizing innovative, research-oriented teaching."
     }
   ],
   "publications": [
@@ -142,49 +133,24 @@
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "Italian",
       "fluency": "Native speaker",
       "icon": ""
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
+      "language": "French",
+      "fluency": "Native speaker",
       "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet."
     },
-    {
-      "name": "Professor Jane Smith",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet."
-    }
-  ],
-  "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing uses quantum-mechanical phenomena such as superposition and entanglement.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01"
+        {
+      "language": "English",
+      "fluency": "~C2",
+      "icon": ""
+    },
+        {
+      "language": "German",
+      "fluency": "C1 (Goethe Certificate)",
+      "icon": ""
     }
   ]
 }
