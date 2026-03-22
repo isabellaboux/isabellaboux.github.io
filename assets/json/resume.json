@@ -10,7 +10,7 @@
       "address": "",
       "postalCode": "",
       "city": "Berlin",
-      "countryCode": "Germany"
+      "countryCode": "DE"
     },
     "profiles": []
   },
@@ -19,19 +19,19 @@
       "name": "RWTH Aachen University",
       "position": "Researcher (post-doc)",
       "location": "Aachen, Germany",
-      "startDate": "223-01-08",
-      "endDate": "2025-30-09",
-      "summary": "...",
-      "highlights": ["EEG", "teaching", "linear-mixed-models", "inferential statistics"]
+      "startDate": "2023-01-08",
+      "endDate": "2025-09-30",
+      "summary": "",
+      "highlights": ["EEG", "teaching", "linear mixed models", "inferential statistics"]
     },
     {
       "name": "Free University Berlin",
       "position": "Researcher (pre-doc)",
       "location": "Berlin, Germany",
       "startDate": "2017-01-08",
-      "endDate": "2023-31-07",
+      "endDate": "2023-07-31",
       "summary": "",
-      "highlights": ["Description 1.", "Description 2."]
+      "highlights": []
     }
   ],
   "volunteer": [
