@@ -260,6 +260,18 @@ layout: default
           </div>
         {% endif %}
 
+        <!-- Skills -->
+        {% if site.data.resume.skills.size > 0 %}
+          <a class="anchor" id="skills"></a>
+          <div class="card mt-3 p-3">
+            <h3 class="card-title font-weight-medium">Skills</h3>
+            <div>
+              {% assign entries = site.data.resume.skills %}
+              {% include cv/skills.liquid %}
+            </div>
+          </div>
+        {% endif %}
+
         <!-- JSONResume Sections - Merge work and volunteer into Experience -->
         {% assign empty_array = '' | split: ',' %}
         {% assign work = site.data.resume.work | default: empty_array %}
@@ -308,18 +320,6 @@ layout: default
             <div>
               {% assign entries = site.data.resume.publications %}
               {% include cv/publications.liquid %}
-            </div>
-          </div>
-        {% endif %}
-
-        <!-- Skills -->
-        {% if site.data.resume.skills.size > 0 %}
-          <a class="anchor" id="skills"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Skills</h3>
-            <div>
-              {% assign entries = site.data.resume.skills %}
-              {% include cv/skills.liquid %}
             </div>
           </div>
         {% endif %}
