@@ -105,18 +105,18 @@
   ],
   "awards": [
     {
-      "title": "Doctoral scholarship",
-      "date": "2017",
-      "awarder": "Enistein Center for Neurosciences",
-      "url": "https://www.ecn-berlin.de/home.html",
-      "summary": "Received ~35K EUR for conducting research in the field of Neurosciences in Berlin."
-    },
-        {
       "title": "Teaching award (co-recipient)",
       "date": "2024",
       "awarder": "Philosophical Faculty of the RWTH AAchen University",
       "url": "https://blog.rwth-aachen.de/ifp/2024/07/17/lehrpreis-2024-an-dr-rachel-brown-und-dr-isabella-boux/",
       "summary": "The prize was awarded for the course 'Experimentalpsychologisches Praktikum', recognizing innovative, research-oriented teaching."
+    },
+    {
+      "title": "Doctoral scholarship",
+      "date": "2017",
+      "awarder": "Enistein Center for Neurosciences",
+      "url": "https://www.ecn-berlin.de/home.html",
+      "summary": "Received ~35K EUR for conducting research in the field of Neurosciences in Berlin."
     }
   ],
   "skills": [
@@ -126,8 +126,21 @@
       "Python",
       "R",
       "Matlab",
-      "SQL",
-      "Git"
+      "SQL"
+    ]
+  },
+  {
+    "name": "Version Control",
+    "keywords": [
+      "Git",
+      "GitHub"
+    ]
+  },
+    {
+    "name": "Deployment",
+    "keywords": [
+      "Google Cloud Platform",
+      "Docker"
     ]
   },
   {
