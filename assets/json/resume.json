@@ -223,22 +223,22 @@
     {
       "language": "Italian",
       "fluency": "Native speaker",
-      "icon": ""
+      "icon": "\uD83C\uDDEE\uD83C\uDDF9"
     },
     {
       "language": "French",
       "fluency": "Native speaker",
-      "icon": ""
+      "icon": "\uD83C\uDDEB\uD83C\uDDF7"
     },
         {
       "language": "English",
       "fluency": "C2",
-      "icon": ""
+      "icon": "\uD83C\uDDFA\uD83C\uDDF8"
     },
         {
       "language": "German",
       "fluency": "C1 (Goethe Certificate)",
-      "icon": ""
+      "icon": "\uD83C\uDDE9\uD83C\uDDEA"
     }
   ]
 }
