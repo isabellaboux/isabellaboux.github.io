@@ -3,10 +3,12 @@ Based on al-folio, a simple, clean, and responsive [Jekyll](https://jekyllrb.com
 
 
 # TO DO
+- [x] Added flags to languages
+- [x] invert teaching award and phd scholarship
+- [x] remove comma after my lication Berlin, Germany, Berlin
 
 ## CV
-- invert teaching award and phd scholarship
-- remove comma after my lication Berlin, Germany, Berlin
+
 
 ## Projects
 - rename exSA
@@ -17,4 +19,6 @@ Based on al-folio, a simple, clean, and responsive [Jekyll](https://jekyllrb.com
 ## Publications
 - add PDFs to all pubs
 
+## Main
+- [ ] Round pic
 
