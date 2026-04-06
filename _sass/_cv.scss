@@ -218,3 +218,10 @@ ul.timeline li::before {
      color: var(--global-text-color);
 }
 */
+
+.language-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 0.75rem;
+}
