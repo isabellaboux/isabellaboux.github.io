@@ -5,6 +5,7 @@ description: with background image
 img: assets/img/4.jpg
 importance: 1
 category: work
+tags: [research, publications, showcase]
 related_publications: true
 ---
 

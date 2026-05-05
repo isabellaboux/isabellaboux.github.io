@@ -1,4 +1,10 @@
-<div class="col mb-4">
+{% capture project_tag_slugs %}{% if project.tags %}{% for tag in project.tags %}{{ tag | slugify }}{% unless forloop.last %}|{% endunless %}{% endfor %}{% endif %}{% endcapture %}
+
+<div
+  class="col mb-4 project-card-column"
+  data-project-category="{{ project.category | default: 'uncategorized' }}"
+  data-project-tags="{{ project_tag_slugs | strip }}"
+>
   <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
     <div class="card h-100 hoverable">
       <div class="row no-gutters">
@@ -11,6 +17,13 @@
           <div class="card-body">
             <h3 class="card-title">{{ project.title }}</h3>
             <p class="card-text">{{ project.description }}</p>
+            {% if project.tags %}
+              <div class="project-tags" aria-label="Project tags">
+                {% for tag in project.tags %}
+                  <span class="project-tag">{{ tag }}</span>
+                {% endfor %}
+              </div>
+            {% endif %}
             <div class="row ml-1 mr-1 p-0">
               {% if project.github %}
                 <div class="github-icon">

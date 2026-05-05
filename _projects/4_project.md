@@ -5,6 +5,7 @@ description: another without an image
 img:
 importance: 3
 category: fun
+tags: [fun, writing, experiments]
 ---
 
 Every project has a beautiful feature showcase page.

@@ -5,6 +5,7 @@ description: EEG-based detection of communicative intent in language
 img: assets/img/exSA_FIG3A.jpg
 importance: 1
 category: work
+tags: [eeg, neuroscience, language, statistics]
 related_publications:
   - boux_instantaneous_2026
 mermaid:
