@@ -409,12 +409,7 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-eeg-bases-of-instantaneous-emotion-sharing-via-language",
-          title: 'EEG Bases of Instantaneous Emotion Sharing via Language',
-          description: "EEG-based detection of communicative intent in language",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-capturing-indirectness-in-language-with-pca",
+          section: "News",},{id: "projects-capturing-indirectness-in-language-with-pca",
           title: 'Capturing indirectness in language with PCA',
           description: "Cognitive properties of indirect replies are rated and related to one another to indentify latent structure of indirectness.",
           section: "Projects",handler: () => {
@@ -454,6 +449,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-eeg-bases-of-instantaneous-emotion-sharing-via-language",
+          title: 'EEG Bases of Instantaneous Emotion Sharing via Language',
+          description: "EEG-based detection of communicative intent in language",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/exSA-EEG/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
