@@ -5,7 +5,7 @@ description: Cognitive properties of indirect replies are rated and related to o
 img: assets/img/iCO-Eval2_Fig3-4.jpg
 importance: 2
 category: work
-tags: [language, PCA, linear mixed modellinginferential statistics, experimental design, ratings]
+tags: [language, PCA, linear mixed modelling, inferential statistics, experimental design, ratings]
 related_publications:
   - Boux2022
 mermaid:
