@@ -5,7 +5,7 @@ description: EEG-based detection of communicative intent in language
 img: assets/img/exSA_FIG3A.jpg
 importance: 1
 category: work
-tags: [eeg, neuroscience, language, statistics]
+tags: [EEG, signal processing, visualization, inferential statistics, experimental design]
 related_publications:
   - boux_instantaneous_2026
 mermaid:
@@ -34,11 +34,6 @@ Can we detect *communicative intent* (e.g., expressing emotion vs stating facts)
 
 ### Preprocessing Pipeline
 
-
-```mermaid
-flowchart TD
-A[Test] --> B[Works]
-```
 
 ```mermaid
 flowchart TD
