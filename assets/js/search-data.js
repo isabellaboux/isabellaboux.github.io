@@ -409,13 +409,13 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-8",
-          title: 'project 8',
+          section: "News",},{id: "projects-saper",
+          title: 'SAper',
           description: "an other project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/SAper/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
+            },},{id: "projects-dummy",
+          title: 'Dummy',
           description: "an other project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/dummy/";
@@ -434,8 +434,8 @@ ninja.data = [{
           description: "an other project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/iCO-TMS/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
+            },},{id: "projects-migrainechat",
+          title: 'MigraineChat',
           description: "a project with no image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/migrainechat/";
