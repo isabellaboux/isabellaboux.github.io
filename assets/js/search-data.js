@@ -409,51 +409,36 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-capturing-indirectness-in-language-with-pca",
-          title: 'Capturing indirectness in language with PCA',
-          description: "Cognitive properties of indirect replies are rated and related to one another to indentify latent structure of indirectness.",
+          section: "News",},{id: "projects-project-8",
+          title: 'project 8',
+          description: "an other project with a background image and giscus comments",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
+              window.location.href = "/projects/SAper/";
             },},{id: "projects-project-8",
           title: 'project 8',
           description: "an other project with a background image and giscus comments",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/projects/dummy/";
             },},{id: "projects-eeg-bases-of-instantaneous-emotion-sharing-via-language",
           title: 'EEG Bases of Instantaneous Emotion Sharing via Language',
           description: "EEG-based detection of communicative intent in language",
           section: "Projects",handler: () => {
               window.location.href = "/projects/exSA-EEG/";
+            },},{id: "projects-capturing-indirectness-in-language-with-pca",
+          title: 'Capturing indirectness in language with PCA',
+          description: "Cognitive properties of indirect replies are rated and related to one another to indentify latent structure of indirectness.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/iCO-Eval/";
+            },},{id: "projects-ico-tms",
+          title: 'iCO-TMS',
+          description: "an other project with a background image and giscus comments",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/iCO-TMS/";
+            },},{id: "projects-project-6",
+          title: 'project 6',
+          description: "a project with no image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/migrainechat/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
