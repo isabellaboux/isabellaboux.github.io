@@ -3,9 +3,9 @@ layout: page
 title: iCO-TMS
 description: an other project with a background image and giscus comments
 img: assets/img/9.jpg
-importance: 2
+importance: 3
 category: work
-tags: [web, comments, showcase]
+tags: [TMS, experimental design, linear mixed modelling, inferential statistics, visualization]
 giscus_comments: true
 ---
 

@@ -5,7 +5,7 @@ description: EEG-based detection of communicative intent in language
 img: assets/img/exSA_FIG3A.jpg
 importance: 1
 category: work
-tags: [EEG, signal processing, visualization, inferential statistics, experimental design]
+tags: [EEG, signal processing, visualization, ANOVA, inferential statistics, experimental design]
 related_publications:
   - boux_instantaneous_2026
 mermaid:

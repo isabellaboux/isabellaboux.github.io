@@ -5,7 +5,7 @@ description: a project with no image
 img:
 importance: 4
 category: fun
-tags: [fun, prototypes, misc]
+tags: [LLM, fastAPI, postgreSQL, data simulation, XGBoost, logistic regression, streamlit, visualization]
 ---
 
 Every project has a beautiful feature showcase page.
