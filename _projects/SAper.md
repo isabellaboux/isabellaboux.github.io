@@ -5,7 +5,7 @@ description: an other project with a background image and giscus comments
 img: assets/img/9.jpg
 importance: 4
 category: work
-tags: [EEG, signal processing, visualization, ANOVA, inferential statistics, experimental design]
+tags: [EEG, signal processing, visualization, ANOVA, inferential statistics, experimental design, matlab]
 giscus_comments: true
 ---
 
