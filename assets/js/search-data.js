@@ -429,9 +429,9 @@ ninja.data = [{
           description: "Cognitive properties of indirect replies are rated and related to one another to indentify latent structure of indirectness.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/iCO-Eval/";
-            },},{id: "projects-ico-tms",
-          title: 'iCO-TMS',
-          description: "an other project with a background image and giscus comments",
+            },},{id: "projects-investigting-the-causal-role-of-brain-regions-for-undestanding-indirect-speech",
+          title: 'Investigting the causal role of brain regions for undestanding indirect speech',
+          description: "Does manipulating activation in the rTPJ brain area causes changes in how people understand indirect language.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/iCO-TMS/";
             },},{id: "projects-migrainechat",
