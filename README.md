@@ -5,7 +5,7 @@ Based on al-folio, a simple, clean, and responsive [Jekyll](https://jekyllrb.com
 # TO DO
 - [x] Added flags to languages
 - [x] invert teaching award and phd scholarship
-- [x] remove comma after my lication Berlin, Germany, Berlin
+- [x] remove comma after my location Berlin, Germany, Berlin
 
 ## CV
 
@@ -17,8 +17,13 @@ Based on al-folio, a simple, clean, and responsive [Jekyll](https://jekyllrb.com
 - make sure references show
 
 ## Publications
-- add PDFs to all pubs
+- [x] add PDFs to all pubs
 
 ## Main
 - [ ] Round pic
 
+# General
+- [x] change accent color to cyan, also in light mode
+- [x] have "Dr." show in the browser tab name
+- [ ] have "Dr." show in the about tab 
+- [ ] remove search function
