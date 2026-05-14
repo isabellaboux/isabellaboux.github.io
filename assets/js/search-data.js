@@ -424,9 +424,9 @@ ninja.data = [{
           description: "EEG-based detection of communicative intent in language",
           section: "Projects",handler: () => {
               window.location.href = "/projects/exSA-EEG/";
-            },},{id: "projects-capturing-indirectness-in-language-with-pca",
-          title: 'Capturing indirectness in language with PCA',
-          description: "Cognitive properties of indirect replies are rated and related to one another to indentify latent structure of indirectness.",
+            },},{id: "projects-the-latent-structure-of-indirectness-in-language",
+          title: 'The latent structure of indirectness in language',
+          description: "Cognitive properties of indirect replies are rated and related to one another to identify the latent structure of indirectness.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/iCO-Eval/";
             },},{id: "projects-investigting-the-causal-role-of-brain-regions-for-undestanding-indirect-speech",
