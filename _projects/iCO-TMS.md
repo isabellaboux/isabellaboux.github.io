@@ -11,24 +11,57 @@ giscus_comments: true
 
 ### Problem
 
-Indirect speech acts are cases where speakers communicate more than the literal sentence says. For example, in response to “Did you bring your cat to the vet?”, the sentence “It got wounded” can indirectly mean “yes”.
+Indirect speech acts are cases where speakers communicate more than the literal sentence says. For example, in response to *“Did you bring your cat to the vet?”*, the sentence *“It got wounded”* can indirectly mean YES.
 
-The scientific question was whether the **right temporo-parietal junction (rTPJ)**, a brain region associated with **Theory of Mind (ToM)**, plays a causal role in understanding indirect speech acts.
+It has been claimed that understanding such indiretc speech acts relies more strongly on **Theory of Mind (ToM)**, that is the human capacity to infer and process the thoughts of other people. ToM has been shown to be linked to a specific brain circuit including the **right temporo-parietal junction (rTPJ)**.
 
-A key methodological challenge was **confounding**. Previous studies often compared direct and indirect utterances that differed not only in indirectness, but also in **speech act type**. For example, a direct statement might be compared with an indirect request. This makes it unclear whether observed behavioral or neural effects are caused by indirectness itself or by the communicative function of the utterance. 
+**So, does the right temporo-parietal junction (rTPJ), a brain region associated with Theory of Mind (ToM), play a causal role in understanding indirect speech acts? If so, altering activation of this brian area while people are exposed to indirect speech acts should change their ability to understand them. In a complementary fashion, this should also alter their ToM capability.**
+
+A key methodological challenge was **confounding**. Previous studies often compared direct and indirect utterances that differed not only in indirectness, but also in **speech act type**. For example, a direct *statement* might be compared with an indirect *request*. This makes it unclear whether observed behavioral or neural effects are caused by indirectness itself or by the communicative function of the sentence (*statement* as opposed to a *request*). 
 This study addressed that issue by designing two stimulus sets:
-* **Speech-act matched:** direct and indirect replies had the same communicative function.
-* **Speech-act non-matched:** direct and indirect replies differed in communicative function, mimicking earlier research designs.
+* **Speech-act matched:** direct and indirect replies had the same communicative function, that is they wer both *statements*.
+* **Speech-act non-matched:** direct and indirect replies differed in communicative function, mimicking earlier research designs. The direct speech act was always a *statement* whereas the indirect one would vary (*accepting an offer*, *declining an offer*, etc).
 
-The goal was to test whether rTPJ stimulation changes the reaction-time cost of indirectness, and whether that effect depends on speech-act matching.
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/iCO-TMS_vignette.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Image by ChatGPT (OpenAI).
+</div>
 
 ---
 
 ### Dataset and experimental design
 
+But how do we alter brain activity? And how do we measure people's ability to understand indirect speech acts and to use ToM skills? 
+
 Data came from 27 human english-native speaker participants who took part in two disctinct behavioral tasks.
 
-* **Pragmatic interprattion task:** 
+#### Altering brain activity: transcranial magnetic stimulation
+
+Changing the level of brain activityy is possible using a method called **transcranial magnetic stimulation(TMS)**. Conveniently, this method is non-invasive (not painful, no need for surgery) and temporary, meaning that the resulting changes in brain activity only last few minutes.
+
+Our participants come for the lab for two sessions (in randmoized order):
+* **real session**: TMS is truly delivered to their brain 
+* **fake session**: TMS is not truly delivered to their brain, although they believe so.
+Having these two types of session allows to experimentally control for unspecific effects of TMS (for instance for the placebo effect).
+
+[IMAGE]
+
+#### Measuring the ability to understand indirect speech acts: pragmatic interpretaion task
+
+Afrer our participants undergo (real or fake) TMS, we measrue how well they can understand indirect speech acts. To do so, we place the participants in front of a computer screen where a question is displayed and after a few seconds the reply is replaced. There are two types of reply:
+* **direct replies** 
+* **indirect replies**
+We do so for many question/reply pairs. Each time, the participant is asked to judge whether the reply means YES or NO and to press one of two keys accordingly. This means that we can collect two measures about the paricipants' ability to understand direct and indirect speech acts:
+* **accuracy**: did they correctly understood that he reply was meant as YES or NO.
+* **reaction times**: how fast were they at making that decision. 
+
+
+
+**Pragmatic interpretaion task:** 
   * Participants read question–reply pairs, for a total of 132 trials.
     * **SA-matched set:** 70 direct/indirect item pairs.
     * **Non-SA-matched set:** 62 direct/indirect item pairs.
@@ -36,6 +69,9 @@ Data came from 27 human english-native speaker participants who took part in two
   * Collected measures:
     * accuracy (how correct were the participants)
     * reaction times (how fast were participants' responses).
+
+
+#### Measuring the Theory of Mind ability
 
 * **Theory of Mind task:** 27 participants total.
   * Participants predicted a character’s behavior based on beliefs and desires.
@@ -48,6 +84,8 @@ Data came from 27 human english-native speaker participants who took part in two
   * Once in a **verum TMS** session, where TMS pulses were really delivered to their brain.
   * Once in a  **sham TMS** session, where no real TMS pulses were delivered.
   * Session order was counterbalanced.
+
+### Experimental design
 
 * **Experimental-design**
     * For the **Pragmatic interpretation task** there were following factors in a fully within-subjects design:
