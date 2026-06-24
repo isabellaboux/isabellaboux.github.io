@@ -23,6 +23,21 @@
       {% if entry.date %}
         ({{ entry.date | split: '-' | slice: 0, 1 | join: '' }})
       {% endif %}
+
+      {% if entry.summary or entry.highlights %}
+        <ul class="items">
+          {% if entry.summary %}
+            <li>
+              <span class="item">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+            </li>
+          {% endif %}
+          {% for item in entry.highlights %}
+            <li>
+              <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     </li>
   {% endfor %}
 </ul>
