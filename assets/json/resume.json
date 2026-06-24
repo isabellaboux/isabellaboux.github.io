@@ -3,7 +3,7 @@
     "name": "Dr. Isabella Boux",
     "label": "Data Scientist | Cognitive Neuroscientist | Linguist",
     "image": "",
-    "summary": "Data science trainee with a PhD in neurolinguistics and 8+ years of experience analyzing complex behavioral and neurophysiological data. Skilled in R, Python, and Matlab, with strong expertise in statistical modeling, data analysis, and real-world human data. Currently applying machine learning methods to real-world datasets, with a particular interest for eHealth and medicine.",
+    "summary": "Data scientist with a PhD with a focus on cognitive neuroscience of language and 8+ years of experience analyzing complex behavioral and neurophysiological data. Skilled in R, Python, and Matlab, with strong expertise in statistical modeling, data analysis, and experimental human data. Currently applying machine learning methods to real-world datasets, with a particular interest for eHealth and medicine.",
     "location": {
       "city": "Berlin",
       "countryCode": "DE"
@@ -80,13 +80,25 @@
       "highlights": []
     },
     {
-      "institution": "Berlin School of Mind and Brain at Humboldt University of Berlin",
+      "institution": "Berlin School of Mind and Brain at Humboldt University Berlin",
       "location": "Berlin, Germany",
       "url": "https://www.mind-and-brain.de/",
       "area": "Mind & Brain, Track Brain (Cognitive Neuroscience)",
       "studyType": "Master of Science",
       "startDate": "2014-01-10",
       "endDate": "2017-09-30",
+      "score": "",
+      "courses": [],
+      "highlights": []
+    },
+        {
+      "institution": "Université Bordeaux Segalen / Universidade de Coimbra",
+      "location": "Coimbra, Portugal",
+      "url": "https://www.mind-and-brain.de/",
+      "area": "Neuroscience and Neuropsychopharmacology",
+      "studyType": "Master of Science (not completed)",
+      "startDate": "2013-09-02",
+      "endDate": "2014-08-31",
       "score": "",
       "courses": [],
       "highlights": []
