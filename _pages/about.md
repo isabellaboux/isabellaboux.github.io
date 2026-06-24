@@ -27,8 +27,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi, I am Isabella! I am currently transitioning my career into data science, driven by a growing interest in using data to solve real-world problems. To support this shift, I recebtly took part in the [Data Science Retreat](https://datascienceretreat.com/), where I build hands-on skills in machine learning, data analysis, and practical problem-solving in a collaborative setting.
+Hi, I am Isabella! I am currently transitioning my career into data science, driven by a growing interest in using data to solve real-world problems. To support this shift, I recently took part in the [Data Science Retreat](https://datascienceretreat.com/), where I expanded my hands-on skills in machine learning, data analysis, and practical problem-solving in a collaborative setting.
 
-I’m especially interested in applying data science in the medical and eHealth space. I’m fascinated by how data can improve healthcare, from better diagnostics to more personalized and accessible treatments, and I’d love to contribute to projects that make a real impact in this area.
+I’m especially interested in applying data science in the medical, healthcare and eHealth space. I’m fascinated by how data can improve healthcare, from better diagnostics to more personalized and accessible treatments, and I’d love to contribute to projects that make a real impact in this area.
 
-My background is in cognitive neuroscience and linguistics, and I hold a PhD from Freie Universität Berlin. During my academic work, I focused on brain processes related to language and cognition, working extensively with experimental data and complex analyses. This experience gave me a strong analytical mindset and a deep curiosity about how people think and communicate—something I now bring into my work in data science.
+My background is in cognitive neuroscience and linguistics, and I hold a PhD from Freie Universität Berlin. During my academic work, I focused on brain processes related to language and cognition, working extensively with experimental data and complex analyses. This experience gave me a strong analytical mindset and a deep curiosity about how people think and communicate — something I now bring into my work in data science.
