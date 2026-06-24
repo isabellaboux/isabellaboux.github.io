@@ -116,6 +116,15 @@
       "highlights": []
     }
   ],
+  "certificates": [
+  {
+    "name": "Data Science Retreat",
+    "issuer": "Data Science Retreat",
+    "date": "2026-04-23",
+    "url": "https://datascienceretreat.com/",
+    "summary": "A 3.5 months intensive training in data science."
+  }
+],
   "awards": [
     {
       "title": "Teaching award (co-recipient)",
