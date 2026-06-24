@@ -9,7 +9,9 @@ tags: [TMS, experimental design, linear mixed modelling, ANOVA, inferential stat
 giscus_comments: true
 ---
 
-### Problem
+# Overview
+
+# STEP 1: Research Question
 
 Indirect speech acts are cases where speakers communicate more than the literal sentence says. For example, in response to *“Did you bring your cat to the vet?”*, the sentence *“It got wounded”* can indirectly mean YES.
 
@@ -33,13 +35,13 @@ This study addressed that issue by designing two stimulus sets:
 
 ---
 
-### Dataset and experimental design
+# STEP 2: Methods and Data Collection
 
 But how do we alter brain activity? And how do we measure people's ability to understand indirect speech acts and to use ToM skills? 
 
 Data came from 27 human english-native speaker participants who took part in two disctinct behavioral tasks.
 
-#### Altering brain activity: transcranial magnetic stimulation
+**> Altering brain activity: transcranial magnetic stimulation**
 
 Changing the level of brain activityy is possible using a method called **transcranial magnetic stimulation(TMS)**. Conveniently, this method is non-invasive (not painful, no need for surgery) and temporary, meaning that the resulting changes in brain activity only last few minutes.
 
@@ -50,7 +52,7 @@ Having these two types of session allows to experimentally control for unspecifi
 
 [IMAGE]
 
-#### Measuring the ability to understand indirect speech acts: pragmatic interpretaion task
+**> Measuring the ability to understand indirect speech acts: pragmatic interpretaion task**
 
 Afrer our participants undergo (real or fake) TMS, we measrue how well they can understand indirect speech acts. To do so, we place the participants in front of a computer screen where a question is displayed and after a few seconds the reply is replaced. There are two types of reply:
 * **direct replies** 
@@ -71,7 +73,7 @@ We do so for many question/reply pairs. Each time, the participant is asked to j
     * reaction times (how fast were participants' responses).
 
 
-#### Measuring the Theory of Mind ability
+**> Measuring the Theory of Mind ability**
 
 * **Theory of Mind task:** 27 participants total.
   * Participants predicted a character’s behavior based on beliefs and desires.
@@ -177,7 +179,7 @@ A --> B --> C --> D --> E --> F --> G
 
 ---
 
-### Analysis approach
+# Analysis approach
 
 The analysis combined **experimental design, causal intervention, behavioral modeling, and mixed-effects statistics**.
 
