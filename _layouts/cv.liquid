@@ -290,6 +290,18 @@ layout: default
           </div>
         {% endif %}
 
+        <!-- Certificates -->
+        {% if site.data.resume.certificates.size > 0 %}
+          <a class="anchor" id="certificates"></a>
+          <div class="card mt-3 p-3">
+            <h3 class="card-title font-weight-medium">Certificates</h3>
+            <div>
+              {% assign entries = site.data.resume.certificates %}
+              {% include cv/certificates.liquid %}
+            </div>
+          </div>
+        {% endif %}
+
         <!-- Education -->
         {% if site.data.resume.education.size > 0 %}
           <a class="anchor" id="education"></a>
@@ -346,18 +358,6 @@ layout: default
             <div>
               {% assign entries = site.data.resume.interests %}
               {% include cv/interests.liquid %}
-            </div>
-          </div>
-        {% endif %}
-
-        <!-- Certificates -->
-        {% if site.data.resume.certificates.size > 0 %}
-          <a class="anchor" id="certificates"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Certificates</h3>
-            <div>
-              {% assign entries = site.data.resume.certificates %}
-              {% include cv/certificates.liquid %}
             </div>
           </div>
         {% endif %}
