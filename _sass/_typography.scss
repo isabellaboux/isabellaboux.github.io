@@ -134,3 +134,15 @@ blockquote {
     }
   }
 }
+
+/* Add more space before Markdown section titles */
+.post p + h2,
+.post p + h3,
+.post ul + h2,
+.post ul + h3,
+.post ol + h2,
+.post ol + h3,
+.post blockquote + h2,
+.post blockquote + h3 {
+  margin-top: 2.5rem;
+}
