@@ -436,7 +436,7 @@ ninja.data = [{
               window.location.href = "/projects/iCO-TMS/";
             },},{id: "projects-migrainechat",
           title: 'MigraineChat',
-          description: "a project with no image",
+          description: "MigraineChat is a prototype for an voice-first app that allows migraine patients to log their health status daily andd generate patient-specific predictaions about their likely of getting a migraine in the next day. This project was conducted jointly with [Dr. Maxim Smirnov](https://github.com/msmirnov18).",
           section: "Projects",handler: () => {
               window.location.href = "/projects/migrainechat/";
             },},{id: "teachings-data-science-fundamentals",
