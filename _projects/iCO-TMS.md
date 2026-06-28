@@ -18,6 +18,9 @@ This project investigated how the brain supports the interpretation of indirect 
 
 The work involved analyzing behavioral reaction-time and accuracy data across experimental conditions, comparing responses to direct and indirect speech acts, and interpreting how brain stimulation affected language-processing performance. The results showed that indirect meaning is not explained by a single brain region alone; instead, the right temporo-parietal junction may be especially relevant when language carries a social communicative function, such as accepting or rejecting an offer.
 
+Further ressources:
+* **Peer-reviewer scientific publication**: Boux, I. P., & Pulvermüller, F. (2023). Does the right temporo-parietal junction play a role in processing indirect speech acts? A transcranial magnetic stimulation study. Neuropsychologia, 188, 108588. [https://doi.org/10.1016/j.neuropsychologia.2023.108588](https://doi.org/10.1016/j.neuropsychologia.2023.108588).
+
 
 # Research Question
 
@@ -204,11 +207,11 @@ log10(RT) ~ Belief * Desire * Stimulation
 
 **rTPJ stimulation changed the pattern only for non-SA-matched stimuli**. Under verum TMS, the delay for indirect replies remained significant in the **SA-matched** condition. However, in the **non-SA-matched** condition, the indirect-vs-direct reaction-time difference was no longer reliable. This suggests that the rTPJ is not causally involved in indirectness alone. Instead, its role appears stronger when indirectness is combined with a change in communicative function, such as moving from factual answering to accepting or rejecting an offer.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/iCO-TMS_ling_sham.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm-8 mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/iCO-TMS_ling_verum.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
