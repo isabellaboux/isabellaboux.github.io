@@ -7,6 +7,9 @@ importance: 3
 category: work
 tags: [TMS, experimental design, linear mixed modelling, logistic regression, linear regression, inferential statistics, causal inference, language, NLP, matlab, R, python, visualization]
 giscus_comments: true
+mermaid:
+  enabled: true
+  zoomable: false
 ---
 
 ## Overview
@@ -40,13 +43,12 @@ This study addressed that issue by designing two stimulus sets:
 
 ---
 
-# Data Collection
+## Data Collection
 
-But how do we alter brain activity? And how do we measure people's ability to understand indirect speech acts and to use ToM skills? 
+Data was collected from 27 human english-native speaker participants who took part in two disctinct behavioral tasks. But how do we alter brain activity? And how do we measure people's ability to understand indirect speech acts and to use ToM skills? 
 
-Data came from 27 human english-native speaker participants who took part in two disctinct behavioral tasks.
 
-  **Altering brain activity: transcranial magnetic stimulation**
+  **METHOD 1: Altering brain activity: transcranial magnetic stimulation**
 
   Changing the level of brain activityy is possible using a method called **transcranial magnetic stimulation(TMS)**. Conveniently, this method is non-invasive (not painful, no need for surgery) and temporary, meaning that the resulting changes in brain activity only last few minutes.
 
@@ -66,7 +68,7 @@ Data came from 27 human english-native speaker participants who took part in two
       Generated with ChatGPT by Openai.
   </div>
 
-  **Measuring the ability to understand indirect speech acts with the *Pragmatic Interpretaion Task***
+  **METHOD 2: Measuring the ability to understand indirect speech acts with the *Pragmatic Interpretaion Task***
 
   Afrer the participants undergo (real or fake) TMS, we measure how well they can understand direct and indirect speech acts. To do so, we place the participants in front of a computer screen where they see a total of 264 question–reply pairs (one by one). For each question/reply pair, the participant is asked to judge whether the reply means YES or NO and to press one of two keys accordingly and to do sa as quickly and accuractely as possible.
 
@@ -80,7 +82,7 @@ Data came from 27 human english-native speaker participants who took part in two
   * `TMS Stimulation`: sham vs verum TMS.
   * `Session`: first vs second
 
-  **Measuring the Theory of Mind ability with the *Hidden Food Task***
+  **METHOD 3: Measuring the Theory of Mind ability with the *Hidden Food Task***
 
   This computerized tasks measure the participant's capacity to infer and process the thoughts of other people.  Participant's see on a screen some statements about the beliefs (*He thinks the doghnut is in the blue/red box*) and desires (*He loves/hates doughnuts*) of a fictional charachters but also about the truth (*The doughnut is in the blue/red box*). Based on what they know about the charcahter, they have to decide which box (red or blue) the ficional cahracher is most likely to open. 
 
