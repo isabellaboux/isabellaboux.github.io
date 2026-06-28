@@ -1,11 +1,11 @@
 ---
 layout: page
-title: SAper
+title: Our brain communicates before we even start speaking
 description: an other project with a background image and giscus comments
 img: assets/img/9.jpg
 importance: 4
 category: work
-tags: [EEG, signal processing, visualization, ANOVA, inferential statistics, experimental design, matlab]
+tags: [EEG, signal processing, visualization, rmANOVA, inferential statistics, experimental design, matlab]
 giscus_comments: true
 ---
 
