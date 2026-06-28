@@ -1,11 +1,11 @@
 ---
 layout: page
-title: EEG Bases of Instantaneous Emotion Sharing via Language
+title: Time-course of brain processing of emotional communication
 description: EEG-based detection of communicative intent in language
 img: assets/img/exSA_FIG3A.jpg
 importance: 1
 category: work
-tags: [EEG, signal processing, visualization, ANOVA, inferential statistics, experimental design, python]
+tags: [EEG, signal processing, visualization, rmANOVA, inferential statistics, experimental design, python]
 related_publications:
   - boux_instantaneous_2026
 mermaid:

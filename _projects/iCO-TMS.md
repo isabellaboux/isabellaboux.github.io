@@ -5,7 +5,7 @@ description: Does manipulating activation in the rTPJ brain area causes changes 
 img: assets/img/iCO-TMS.png
 importance: 3
 category: work
-tags: [TMS, experimental design, linear mixed modelling, ANOVA, inferential statistics, causal inference, language, NLP, matlab, R, python, visualization]
+tags: [TMS, experimental design, linear mixed modelling, logistic regression, linear regression, inferential statistics, causal inference, language, NLP, matlab, R, python, visualization]
 giscus_comments: true
 ---
 

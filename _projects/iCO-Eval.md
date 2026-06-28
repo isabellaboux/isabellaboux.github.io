@@ -1,6 +1,6 @@
 ---
 layout: page
-title: The latent structure of indirectness in language
+title: The latent structure of indirect language
 description: Cognitive properties of indirect replies are rated and related to one another to identify the latent structure of indirectness.  
 img: assets/img/iCO-Eval2_Fig3-4.jpg
 importance: 2
