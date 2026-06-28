@@ -409,8 +409,8 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-saper",
-          title: 'SAper',
+          section: "News",},{id: "projects-our-brain-communicates-before-we-even-start-speaking",
+          title: 'Our brain communicates before we even start speaking',
           description: "an other project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/SAper/";
@@ -419,18 +419,18 @@ ninja.data = [{
           description: "an other project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/dummy/";
-            },},{id: "projects-eeg-bases-of-instantaneous-emotion-sharing-via-language",
-          title: 'EEG Bases of Instantaneous Emotion Sharing via Language',
+            },},{id: "projects-time-course-of-brain-processing-of-emotional-communication",
+          title: 'Time-course of brain processing of emotional communication',
           description: "EEG-based detection of communicative intent in language",
           section: "Projects",handler: () => {
               window.location.href = "/projects/exSA-EEG/";
-            },},{id: "projects-the-latent-structure-of-indirectness-in-language",
-          title: 'The latent structure of indirectness in language',
+            },},{id: "projects-the-latent-structure-of-indirect-language",
+          title: 'The latent structure of indirect language',
           description: "Cognitive properties of indirect replies are rated and related to one another to identify the latent structure of indirectness.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/iCO-Eval/";
-            },},{id: "projects-investigting-the-causal-role-of-brain-regions-for-undestanding-indirect-speech",
-          title: 'Investigting the causal role of brain regions for undestanding indirect speech',
+            },},{id: "projects-investigting-the-causal-role-of-rtpj-brain-area-for-undestanding-indirect-speech",
+          title: 'Investigting the causal role of rTPJ brain area for undestanding indirect speech',
           description: "Does manipulating activation in the rTPJ brain area causes changes in how people understand indirect language.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/iCO-TMS/";
