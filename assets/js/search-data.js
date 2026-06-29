@@ -429,8 +429,8 @@ ninja.data = [{
           description: "[]",
           section: "Projects",handler: () => {
               window.location.href = "/projects/iCO-Eval/";
-            },},{id: "projects-does-manipulating-activation-in-the-rtpj-brain-area-cause-changes-in-how-people-understand-indirect-language",
-          title: 'Does manipulating activation in the rTPJ brain area cause changes in how people...',
+            },},{id: "projects-is-the-rtpj-brain-area-contributing-to-understanding-indirect-language",
+          title: 'Is the rTPJ brain area contributing to understanding indirect language?',
           description: "[]",
           section: "Projects",handler: () => {
               window.location.href = "/projects/iCO-TMS/";
