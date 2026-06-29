@@ -409,7 +409,12 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-does-our-brain-communicate-before-we-even-start-speaking",
+          section: "News",},{id: "projects-who-are-you-talking-to-how-your-conversational-partner-affects-your-word-choices",
+          title: 'Who are you talking to? How your conversational partner affects your word choices...',
+          description: "[]",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/LEALCO/";
+            },},{id: "projects-does-our-brain-communicate-before-we-even-start-speaking",
           title: 'Does our brain communicate before we even start speaking?',
           description: "[]",
           section: "Projects",handler: () => {
