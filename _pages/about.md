@@ -27,8 +27,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi, I am Isabella! I am currently transitioning my career into data science, driven by a growing interest in using data to solve real-world problems. To support this shift, I recently took part in the [Data Science Retreat](https://datascienceretreat.com/), where I expanded my hands-on skills in machine learning, data analysis, and practical problem-solving in a collaborative setting.
+Hi, I’m Isabella. I am a **data scientist** with a strong analytical background in cognitive neuroscience, linguistics, and statistical data analysis. I bring a strong foundation in **statistical thinking**, **experimental data analysis**, and **scientific problem-solving**, and I am now applying these skills in **machine learning** and **AI**.
 
-I’m especially interested in applying data science in the medical, healthcare and eHealth space. I’m fascinated by how data can improve healthcare, from better diagnostics to more personalized and accessible treatments, and I’d love to contribute to projects that make a real impact in this area.
+I have worked for 8+ years with experimental data and complex analyses. This experience has shaped my rigorous approach to problem-solving, my ability to work with complex datasets, and my interest in uncovering meaningful patterns in data. I recently expanded my applied machine learning and AI skills through dedicated training, where I worked on practical machine learning and collaborative problem-solving projects.
 
-My background is in cognitive neuroscience and linguistics, and I hold a PhD from Freie Universität Berlin. During my academic work, I focused on brain processes related to language and cognition, working extensively with experimental data and complex analyses. This experience gave me a strong analytical mindset and a deep curiosity about how people think and communicate — something I now bring into my work in data science.
+I am especially interested in applying data science in the **Medical**, **Healthcare**, **eHealth**, and **MedTech** sectors. I am motivated by the potential of data-driven methods to improve diagnostics, support personalized treatments, and make healthcare more accessible and effective. I am excited to contribute my analytical expertise, scientific mindset, and growing machine learning skill set to projects with real-world impact.
+
