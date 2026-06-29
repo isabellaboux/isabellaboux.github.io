@@ -39,6 +39,13 @@ table {
   margin-bottom: 1.5rem;
 }
 
+.post article table + p,
+.post article table + ul,
+.post article table + ol,
+.post article table + div {
+  margin-top: 1rem;
+}
+
 a,
 table.table a {
   color: var(--global-theme-color);
