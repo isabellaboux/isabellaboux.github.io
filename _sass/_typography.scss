@@ -35,6 +35,10 @@ table {
   }
 }
 
+.post article table {
+  margin-bottom: 1.5rem;
+}
+
 a,
 table.table a {
   color: var(--global-theme-color);
