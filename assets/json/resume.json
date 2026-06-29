@@ -118,11 +118,12 @@
   ],
   "certificates": [
   {
-    "name": "Data Science Retreat",
+    "name": "Data Science Training",
     "issuer": "Data Science Retreat",
+    "location": "Berlin, Germany",
     "date": "2026-04-23",
     "url": "https://datascienceretreat.com/",
-    "summary": "A 3.5 months intensive training in data science."
+    "summary": "A 3.5-month intensive, hands-on data science program covering machine learning, Python, statistics, data visualization, deep learning, NLP, and practical MLOps. The training combined technical foundations with applied project work, collaborative problem-solving, and a portfolio project designed to translate data science methods into real-world business value."
   }
 ],
   "awards": [
