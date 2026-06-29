@@ -35,7 +35,7 @@ table {
   }
 }
 
-.post article table {
+.collection-projects .post article table {
   border: 1px solid var(--global-divider-color);
   border-collapse: collapse;
   margin-top: 2rem;
@@ -43,16 +43,16 @@ table {
   width: 100%;
 }
 
-.post article table th,
-.post article table td {
+.collection-projects .post article table th,
+.collection-projects .post article table td {
   border: 1px solid var(--global-divider-color);
   padding: 0.45rem 0.75rem;
 }
 
-.post article table + p,
-.post article table + ul,
-.post article table + ol,
-.post article table + div {
+.collection-projects .post article table + p,
+.collection-projects .post article table + ul,
+.collection-projects .post article table + ol,
+.collection-projects .post article table + div {
   margin-top: 1.5rem;
 }
 
