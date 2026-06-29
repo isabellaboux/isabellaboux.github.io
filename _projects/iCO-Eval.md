@@ -10,7 +10,7 @@ related_publications:
   - Boux2022
 mermaid:
   enabled: true
-  zoomable: true
+  zoomable: false
 ---
 
 ## Overview

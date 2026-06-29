@@ -6,7 +6,6 @@ img: assets/img/9.jpg
 importance: 4
 category: work
 tags: [EEG, signal processing, visualization, rmANOVA, inferential statistics, experimental design, matlab]
-giscus_comments: true
 ---
 
 Every project has a beautiful feature showcase page.

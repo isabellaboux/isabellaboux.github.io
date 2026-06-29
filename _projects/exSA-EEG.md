@@ -10,7 +10,7 @@ related_publications:
   - boux_instantaneous_2026
 mermaid:
   enabled: true
-  zoomable: true
+  zoomable: false
 ---
 
 ### Problem
