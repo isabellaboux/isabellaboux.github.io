@@ -5,39 +5,71 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% for entry in entries %}
     <li class="list-group-item">
-      {% if entry.icon %}
-        <i class="{{ entry.icon }}"></i>
-      {% endif %}
-      {% if entry.url %}
-        <strong
-          ><a href="{{ entry.url }}" target="_blank">{{ entry.name }}</a></strong
-        >
-      {% else %}
-        <strong>{{ entry.name }}</strong>
-      {% endif %}
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
+          {% capture issue_date %}
+            {% if entry.date %}{{ entry.date }}{% elsif entry.issueDate %}{{ entry.issueDate }}{% endif %}
+          {% endcapture %}
+          {% capture location %}
+            {% if entry.location %}{{ entry.location }}{% endif %}
+          {% endcapture %}
 
-      {% if entry.issuer %}
-        - <em>{{ entry.issuer }}</em>
-      {% endif %}
+          <table class="table-cv">
+            <tbody>
+              {% if issue_date != '' %}
+                {% assign certificate_year = issue_date | split: '-' | first %}
+                <tr>
+                  <td>
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
+                      {{ certificate_year }}
+                    </span>
+                  </td>
+                </tr>
+              {% endif %}
+              {% if location != '' %}
+                <tr>
+                  <td>
+                    <p class="location">
+                      <i class="fa-solid fa-location-dot iconlocation"></i>
+                      {{ location }}
+                    </p>
+                  </td>
+                </tr>
+              {% endif %}
+            </tbody>
+          </table>
+        </div>
 
-      {% if entry.date %}
-        ({{ entry.date | split: '-' | slice: 0, 1 | join: '' }})
-      {% endif %}
-
-      {% if entry.summary or entry.highlights %}
-        <ul class="items">
-          {% if entry.summary %}
-            <li>
-              <span class="item">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</span>
-            </li>
+        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+          {% if entry.url %}
+            <h6 class="title font-weight-bold ml-1 ml-md-4">
+              <a href="{{ entry.url }}" target="_blank">{{ entry.name }}</a>
+            </h6>
+          {% elsif entry.name %}
+            <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.name }}</h6>
           {% endif %}
-          {% for item in entry.highlights %}
-            <li>
-              <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
-            </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
+
+          {% if entry.issuer %}
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.issuer }}</h6>
+          {% endif %}
+
+          {% if entry.summary %}
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
+              {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+            </h6>
+          {% endif %}
+
+          {% if entry.highlights %}
+            <ul class="items">
+              {% for item in entry.highlights %}
+                <li>
+                  <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      </div>
     </li>
   {% endfor %}
 </ul>
