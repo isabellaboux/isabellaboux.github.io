@@ -10,7 +10,7 @@ related_publications:
   - boux_instantaneous_2026
 mermaid:
   enabled: true
-  zoomable: false
+  zoomable: true
 ---
 
 ## Overview
@@ -40,11 +40,12 @@ Can we detect *communicative intent* (e.g., expressing emotion vs stating facts)
 </div>
 
 
-Participants are seated in front of a computer and take part to a passive computerized task, where they have to read the presented text. The text consists of 270+ sentences that result form crossing two independent factos: `grammatical person` (1st and 3rd) and `adjective type` (emotional vs. physical) in a 2 x 2 experimentla design. This effectively resuts in 4 types of sentences, for instance:
+While EEG is being recorded, participants are seated in front of a computer and take part to a passive computerized task, where they have to read the presented text. The text consists of 270+ sentences that result form crossing two independent factos: `grammatical person` (1st and 3rd) and `adjective type` (emotional vs. physical) in a 2 x 2 experimentla design. This effectively resuts in 4 types of sentences, for instance:
 - **1st/emotional**: *"I am happy."* (expressive)
 - **3rd/emotional**: *"He is happy."* (assertive)
 - **1st/physical**: *"I am blonde."* (assertive)
 - **3rd/physical**: *"He is blonde."* (assertive)
+
 Importantly, the **expressive** communication is instantiated only in the **"1st/emotional"** case as also confirmed by validation rating by an independant sample of participants.
 
 ---
@@ -111,7 +112,13 @@ E --> F --> H
 ```
 ---
 
-## data drive and hypothesi sneutral time window selection
+## Results
+
+EEG data is multidimensional: it extends in time (ms elapsed since the word of interest appeared on screen) and space (64 channels measuing signal across the head). the first step was to narrow down the time dimension and identify time windows of interest. To thi spurpose, the EEG signall across all channels and subjects was averaged into one unieuq signal. Th epeaks and troughs in this signal were identified using the full width half maximum approach (FWHM). This resulted in the identification of four time windows of interest:
+- **TW1**: 76–100 ms
+- **TW2**: 110–130 ms
+- **TW3**: 143–197 ms
+- **TW4**: 221–279 MS
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -119,24 +126,32 @@ E --> F --> H
     </div>
 </div>
 <div class="caption">
-    [Figure 1]: Figure and legend taken from Boux et al. (2026). Localizer ERP obtained by averaging potentials across all conditions, all electrodes and all subjects in the pre-word baselined data. Grey boxes indicate the four unbiased data-driven time windows defined around each peak using the FWHM method. The yellow boxes indicate the three a priori time windows taken from the literature, capturing the N400, early P600 (eP600) and late P600 (lP600). The upper banner shows the average topographical maps obtained for each of these time windows.
+    [Figure 1]: Figure and legend taken from Boux et al. (2026). Grey boxes indicate the four unbiased data-driven time windows defined around each peak using the FWHM method. The yellow boxes indicate the three a priori time windows taken from the literature, capturing the N400, early P600 (eP600) and late P600 (lP600). The upper banner shows the average topographical maps obtained for each of these time windows.
 </div>
 
-## Analysis Strategy
-Instead of naive classification, used a **controlled statistical model** to isolate signal sources:
+The second step, was to simplify the spatial dimension of the EEG data. To do so, we split the spatial component into two dimensions or factors:
+- `gradient`: anterior, central, posterior
+- `laterality`: left, midline, right
+This resulted in 9 selsction so felectrodes:
+- anterior/left
+- anterior/midline
+- anterir/right
+- central/left
+- central/midline
+- central/right
+- posterior/left
+- posterior/midline
+- posterior/right
 
-- **Repeated-measures ANOVA**
-  - Factors:
-    - Person (1st vs 3rd)
-    - Adjective (emotional vs physical)
-    - Electrode location (spatial structure)
-- Key idea:
-  - The **interaction term** isolates *communicative intent*
-  - Removes confounds from syntax + semantics
+[IMAGE]
 
----
+After identifying channel poolings of interets and time window of interest, we aimed at assesing where amon these time windos and electrode susets the we would dtect a dissociation between exrpressives and aserives. this dissociation is assessed by a **repeated-measures ANOVA** with the following factors, carried out separately in the 4 time windows of interest:
+  - `Person`: 1st vs 3rd
+  - `Adjective`: emotional vs physical
+  - `Gradient`: anterior, central, posterior
+  - `Laterality`: left, midline, right
 
-## Results
+The expected key interaction between `Person` and `Adjective` was detected in TW1 and TW4 indicatin
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -154,24 +169,19 @@ Instead of naive classification, used a **controlled statistical model** to isol
 
 ---
 
-## Data Science Interpretation
-This project demonstrates:
 
-- **Signal extraction in low SNR environments**
-  - EEG is extremely noisy → requires heavy preprocessing
-- **Temporal feature engineering**
-  - Meaningful signals emerge only in specific time windows
-- **High-dimensional → structured reduction**
-  - 64 channels × time → interpretable features
-- **Inferential statistics**
-    - Experimental design (controlled feature disentanglement)
+## Tech Stack
 
----
-
-### Tech Stack
-- Python (MNE, NumPy)
-- Signal processing (filtering, ICA)
-- Statistical modeling (ANOVA, interaction effects)
-- Experimental design (controlled feature disentanglement)
-
----
+Python
+- `numpy`
+- `mne-python`
+Signal processing
+- filtering
+- indpendent component analysis (ICA)
+Statistical modeling and inferential statistics
+- repeated measure ANOVA in `STATISTICA`
+- interaction effects
+- post-hoc tests
+Experimental design:
+- 2 x 2 factorial design
+- control for extraneous variables
