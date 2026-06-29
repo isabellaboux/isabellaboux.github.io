@@ -4,7 +4,7 @@ title: MigraineChat
 description: []
 img: assets/img/migrainechat_cover.png
 importance: 4
-category: fun
+category: miscellaneous
 tags: [LLM, fastAPI, PostgreSQL, data simulation, XGBoost, logistic regression, scikit-learn, streamlit, visualization, plotly, synthetic data generation, speech-to-text, text-to-speech]
 ---
 
@@ -171,7 +171,6 @@ External services
 * openai
     * gpt-5.4-nano
 * langfuse
-
 
 
 
