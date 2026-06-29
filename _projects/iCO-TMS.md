@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Investigting the causal role of rTPJ brain area for undestanding indirect speech
+title: Investigating the causal role of rTPJ brain area for undestanding indirect speech
 description: Does manipulating activation in the rTPJ brain area causes changes in how people understand indirect language.
 img: assets/img/iCO-TMS.png
 importance: 3
