@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Does manipulating activation in the rTPJ brain area cause changes in how people understand indirect language?
+title: Is the rTPJ brain area contributing to understanding indirect language?
 description: []
 img: assets/img/iCO-TMS.png
 importance: 3
@@ -18,22 +18,23 @@ This project investigated how the brain supports the interpretation of indirect 
 
 The work involved analyzing behavioral reaction-time and accuracy data across experimental conditions, comparing responses to direct and indirect speech acts, and interpreting how brain stimulation affected language-processing performance. The results showed that indirect meaning is not explained by a single brain region alone; instead, the right temporo-parietal junction may be especially relevant when language carries a social communicative function, such as accepting or rejecting an offer.
 
-Further ressources:
-* **Peer-reviewer scientific publication**: Boux, I. P., & Pulvermüller, F. (2023). Does the right temporo-parietal junction play a role in processing indirect speech acts? A transcranial magnetic stimulation study. Neuropsychologia, 188, 108588. [https://doi.org/10.1016/j.neuropsychologia.2023.108588](https://doi.org/10.1016/j.neuropsychologia.2023.108588).
+Further resources:
+* **Peer-reviewed scientific publication**: Boux, I. P., & Pulvermüller, F. (2023). Does the right temporo-parietal junction play a role in processing indirect speech acts? A transcranial magnetic stimulation study. Neuropsychologia, 188, 108588. [https://doi.org/10.1016/j.neuropsychologia.2023.108588](https://doi.org/10.1016/j.neuropsychologia.2023.108588).
 
+---
 
-# Research Question
+## Research Question
 
 Indirect speech acts are cases where speakers communicate more than the literal sentence says. For example, in response to *“Did you bring your cat to the vet?”*, the sentence *“It got wounded”* can indirectly mean YES.
 
-It has been claimed that understanding such indiretc speech acts relies more strongly on **Theory of Mind (ToM)**, that is the human capacity to infer and process the thoughts of other people. ToM has been shown to be linked to a specific brain circuit including the **right temporo-parietal junction (rTPJ)**.
+It has been claimed that understanding such indirect speech acts relies more strongly on **Theory of Mind (ToM)**, that is, the human capacity to infer and process the thoughts of other people. ToM has been shown to be linked to a specific brain circuit including the **right temporo-parietal junction (rTPJ)**.
 
-> **So, does the right temporo-parietal junction (rTPJ), a brain region associated with Theory of Mind (ToM), play a causal role in understanding indirect speech acts? If so, altering activation of this brian area while people are exposed to indirect speech acts should change their ability to understand them. In a complementary fashion, this should also alter their ToM capability.**
+> **So, does the right temporo-parietal junction (rTPJ), a brain region associated with Theory of Mind (ToM), play a causal role in understanding indirect speech acts? If so, altering activation of this brain area while people are exposed to indirect speech acts should change their ability to understand them. In a complementary fashion, this should also alter their ToM capability.**
 
 A key methodological challenge was **confounding**. Previous studies often compared direct and indirect utterances that differed not only in indirectness, but also in **speech act type**. For example, a direct *statement* might be compared with an indirect *request*. This makes it unclear whether observed behavioral or neural effects are caused by indirectness itself or by the communicative function of the sentence (*statement* as opposed to a *request*). 
 This study addressed that issue by designing two stimulus sets:
-* **Speech-act matched:** direct and indirect replies had the same communicative function, that is they wer both *statements*.
-* **Speech-act non-matched:** direct and indirect replies differed in communicative function, mimicking earlier research designs. The direct speech act was always a *statement* whereas the indirect one would vary (*accepting an offer*, *declining an offer*, etc).
+* **Speech-act matched:** direct and indirect replies had the same communicative function, that is, they were both *statements*.
+* **Speech-act non-matched:** direct and indirect replies differed in communicative function, mimicking earlier research designs. The direct speech act was always a *statement*, whereas the indirect one would vary (*accepting an offer*, *declining an offer*, etc.).
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
@@ -48,17 +49,17 @@ This study addressed that issue by designing two stimulus sets:
 
 ## Data Collection
 
-Data was collected from 27 human english-native speaker participants who took part in two disctinct behavioral tasks. But how do we alter brain activity? And how do we measure people's ability to understand indirect speech acts and to use ToM skills? 
+Data was collected from 27 native English-speaking participants who took part in two distinct behavioral tasks. But how do we alter brain activity? And how do we measure people's ability to understand indirect speech acts and use ToM skills?
 
 
   **METHOD 1: Altering brain activity: transcranial magnetic stimulation**
 
-  Changing the level of brain activityy is possible using a method called **transcranial magnetic stimulation(TMS)**. Conveniently, this method is non-invasive (not painful, no need for surgery) and temporary, meaning that the resulting changes in brain activity only last few minutes.
+  Changing the level of brain activity is possible using a method called **transcranial magnetic stimulation (TMS)**. Conveniently, this method is non-invasive (not painful, with no need for surgery) and temporary, meaning that the resulting changes in brain activity last only a few minutes.
 
-  Our participants come for the lab for two sessions (in randmoized order):
+  Our participants came to the lab for two sessions (in randomized order):
   * **real session**: TMS is truly delivered to their brain 
   * **fake session**: TMS is not truly delivered to their brain, although they believe so.
-  Having these two types of session allows to experimentally control for unspecific effects of TMS (for instance for the placebo effect).
+  Having these two types of session allowed us to experimentally control for nonspecific effects of TMS, such as placebo effects.
 
   The TMS manipulation in itself does not deliver data. Instead it is expected to affect the data from the following two tasks.
 
@@ -71,33 +72,33 @@ Data was collected from 27 human english-native speaker participants who took pa
       Generated with ChatGPT by Openai.
   </div>
 
-  **METHOD 2: Measuring the ability to understand indirect speech acts with the *Pragmatic Interpretaion Task***
+  **METHOD 2: Measuring the ability to understand indirect speech acts with the *Pragmatic Interpretation Task***
 
-  Afrer the participants undergo (real or fake) TMS, we measure how well they can understand direct and indirect speech acts. To do so, we place the participants in front of a computer screen where they see a total of 264 question–reply pairs (one by one). For each question/reply pair, the participant is asked to judge whether the reply means YES or NO and to press one of two keys accordingly and to do sa as quickly and accuractely as possible.
+  After the participants underwent real or sham TMS, we measured how well they could understand direct and indirect speech acts. To do so, we placed the participants in front of a computer screen where they saw a total of 264 question-reply pairs, one by one. For each question-reply pair, the participant was asked to judge whether the reply meant YES or NO and to press one of two keys accordingly, doing so as quickly and accurately as possible.
 
-  This means that we can collect two measures about the paricipants' ability to understand direct and indirect speech acts:
-  * **accuracy (binary)**: did they correctly understood that he reply was meant as YES or NO.
+  This means that we could collect two measures of the participants' ability to understand direct and indirect speech acts:
+  * **accuracy (binary)**: did they correctly understand that the reply was meant as YES or NO?
   * **reaction times (continuous)**: how fast were they at making that decision. 
 
-  We are interested in knowing whether thesecollected measures are affected by:
+  We were interested in knowing whether these collected measures were affected by:
   * `In/Directness of the reply`: direct or indirect
-  * `SA-matching`: matched vs. non matches (see this other [project](https://isabellaboux.github.io/projects/iCO-Eval/) for more explanation on this)
-  * `TMS Stimulation`: sham vs verum TMS.
-  * `Session`: first vs second
+  * `SA-matching`: matched vs. non-matched (see this other [project](https://isabellaboux.github.io/projects/iCO-Eval/) for more explanation)
+  * `TMS Stimulation`: sham vs. verum TMS
+  * `Session`: first vs. second
 
   **METHOD 3: Measuring the Theory of Mind ability with the *Hidden Food Task***
 
-  This computerized tasks measure the participant's capacity to infer and process the thoughts of other people.  Participant's see on a screen some statements about the beliefs (*He thinks the doghnut is in the blue/red box*) and desires (*He loves/hates doughnuts*) of a fictional charachters but also about the truth (*The doughnut is in the blue/red box*). Based on what they know about the charcahter, they have to decide which box (red or blue) the ficional cahracher is most likely to open. 
+  This computerized task measured the participant's capacity to infer and process the thoughts of other people. Participants saw on a screen statements about the beliefs (*He thinks the doughnut is in the blue/red box*) and desires (*He loves/hates doughnuts*) of a fictional character, as well as statements about the truth (*The doughnut is in the blue/red box*). Based on what they knew about the character, they had to decide which box (red or blue) the fictional character was most likely to open.
 
-  Again, we collect two measures about the paricipants' ability to process Theory of Mind:
-  * **accuracy (binary)**: did they correctly understood predict the behavior of the fictional charachter.
+  Again, we collected two measures of the participants' ability to process Theory of Mind:
+  * **accuracy (binary)**: did they correctly predict the behavior of the fictional character?
   * **reaction times (continuous)**: how fast were they at making that decision. 
 
-  For the **Theory of Mind task**  there were following factors in a fully within-subjects design:
-  * `Belief`: true vs false.
-  * `Desire`: approach vs avoidance.
-  * `TMS Stimulation`: sham vs verum TMS.
-  * `Session`: first vs second.
+  For the **Theory of Mind task**, there were the following factors in a fully within-subjects design:
+  * `Belief`: true vs. false
+  * `Desire`: approach vs. avoidance
+  * `TMS Stimulation`: sham vs. verum TMS
+  * `Session`: first vs. second
 
 ---
 
@@ -200,6 +201,7 @@ log10(RT) ~ Belief * Desire * Stimulation
             + (1 | item)
 ```
 
+---
 
 ## Results
 
@@ -216,12 +218,12 @@ log10(RT) ~ Belief * Desire * Stimulation
     </div>
 </div>
 <div class="caption">
-    The large panel illustrates the average RTs (by subject) form the pragmatic task in the sham TMS condition plotted by SA-matching and In/Directness, illustrating the significant effect of In/Directness. The small panel illustrates the average difference in RTs found in the sham data between direct and indirect conditions (indirect >direct), separately by SA-matching. Error bars indicate the standard error of the mean (SEM) by subject. * indicates p < 0.05, ** indicates p < 0.01, *** indicates p < 0.001.
+    The large panel illustrates the average RTs (by subject) from the pragmatic task in the sham TMS condition plotted by SA-matching and In/Directness, illustrating the significant effect of In/Directness. The small panel illustrates the average difference in RTs found in the sham data between direct and indirect conditions (indirect > direct), separately by SA-matching. Error bars indicate the standard error of the mean (SEM) by subject. * indicates p < 0.05, ** indicates p < 0.01, *** indicates p < 0.001.
 
-    The large panel illustrates the average RTs (by subject) form the pragmatic task following verum TMS plotted by SA-matching and In/Directness, illustrating the significant interaction effect between In/Directness and SA-matching. The small panel illustrates the average difference in RTs found in the verum data between direct and indirect conditions (indirect>direct), separately by SA-matching. Error bars indicate the standard error of the mean (SEM) by subject. * indicates p < 0.05, ** indicates p < 0.01, *** indicates p < 0.001.
+    The large panel illustrates the average RTs (by subject) from the pragmatic task following verum TMS plotted by SA-matching and In/Directness, illustrating the significant interaction effect between In/Directness and SA-matching. The small panel illustrates the average difference in RTs found in the verum data between direct and indirect conditions (indirect > direct), separately by SA-matching. Error bars indicate the standard error of the mean (SEM) by subject. * indicates p < 0.05, ** indicates p < 0.01, *** indicates p < 0.001.
 </div>
 
-**The Theory of Mind task worked as baseline (with sham TMS)** because it showed expected effects. False-belief trials were slower than true-belief trials. Avoidance-desire trials were slower than approach-desire trials. Belief and desire interacted, such that false-belief and avoidance-desire trials where the most time costly. These 
+**The Theory of Mind task worked as a baseline (with sham TMS)** because it showed the expected effects. False-belief trials were slower than true-belief trials. Avoidance-desire trials were slower than approach-desire trials. Belief and desire interacted such that false-belief and avoidance-desire trials were the most time costly.
 
 **Verum TMS affected Theory of Mind task performance**. It reduced reaction times in some ToM-relevant conditions, suggesting that stimulation did affect ToM-related processing.
 
@@ -231,14 +233,14 @@ log10(RT) ~ Belief * Desire * Stimulation
     </div>
 </div>
 <div class="caption">
-     The large panel illustrates the reaction time data form the Theory of Mind task separated by Belief and Desire, where B+: true belief, B-: false belief, D+: approach desire and D-: avoidance desire. The small panel illustrated the difference in reaction times between verum and sham condition (verum>sham) by Belief and Desire. In all panels, error bars indicate the standard error of the mean (SEM) by subject. Stars indicate significance level (* indicates p < 0.05, ** indicates p < 0.01, *** indicates p < 0.001).
+     The large panel illustrates the reaction time data from the Theory of Mind task separated by Belief and Desire, where B+: true belief, B-: false belief, D+: approach desire, and D-: avoidance desire. The small panel illustrates the difference in reaction times between verum and sham conditions (verum > sham) by Belief and Desire. In all panels, error bars indicate the standard error of the mean (SEM) by subject. Stars indicate significance levels (* indicates p < 0.05, ** indicates p < 0.01, *** indicates p < 0.001).
 </div>
+
+---
 
 ## Conclusion
 
-The study did **not** find evidence that the rTPJ is causally necessary for processing indirectness per se.
-
-Instead, the results support a more nuanced interpretation:
+The study did **not** find evidence that the rTPJ is causally necessary for processing indirectness per se. Instead, the results support a more nuanced interpretation:
 
 > rTPJ-mediated Theory of Mind may be especially relevant when indirectness is combined with a change in speech-act function, such as accepting or rejecting an offer, rather than when direct and indirect utterances perform the same communicative function.
 

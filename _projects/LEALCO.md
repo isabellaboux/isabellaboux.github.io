@@ -8,11 +8,11 @@ category: work
 tags: [EEG, behavioral, signal processing, visualization, linear mixed modelling, linear regression, logistic regression, language, inferential statistics, experimental design, matlab, R, Python]
 ---
 
-## Overvew
+## Overview
 
 ... forthcoming...
 
-Furether resources:
+Further resources:
 - **Submitted publication**: Boux I. P., Kuhlen A. K., Who you talk to changes how you retrieve words: early partner-specific influence on lexical access
 
 ---
@@ -23,7 +23,7 @@ Python
 - `psychopy` for programming the computerized tasks
 
 Matlab
-- `fieldrip` for preprocessing and visualizing EEG data
+- `fieldtrip` for preprocessing and visualizing EEG data
 
 R
 - `lme4` for linear and generalized mixed-effects models.

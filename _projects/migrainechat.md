@@ -11,17 +11,17 @@ tags: [LLM, fastAPI, PostgreSQL, data simulation, XGBoost, logistic regression, 
 ## Overview
 MigraineChat is a prototype for a voice-first app that allows migraine patients to log their health status daily and generate patient-specific predictions about their likelihood of getting a migraine on the next day.
 
-This project was conducted jointly with [Dr. Maxim Smirnov](https://github.com/msmirnov18) in the context of the training [Data Science Retreat](https://datascienceretreat.com/).
+This project was conducted jointly with [Dr. Maxim Smirnov](https://github.com/msmirnov18) in the context of the [Data Science Retreat](https://datascienceretreat.com/) training program.
 
 **How does this differ from already existing migraine logging apps?**
 
-- **voice-first logging**: many migraine patients suffer from photosensitivity, meaning that light sources increase their pain. For this reason, staring at their smartphone while they type their symptoms is not ideal. Using their voice offers an appealing alternative.
-- **daily logging every day, not only on migraine days**: the chat function is designed to capture data daily. This is in turn critical so that patient data outside of migraine episodes is also logged, which is crucial for predicting migraine onset.
+- **voice-first logging**: many migraine patients suffer from photosensitivity, meaning that light sources increase their pain. For this reason, staring at a smartphone while typing in symptoms is not ideal. Using their voice offers an appealing alternative.
+- **daily logging every day, not only on migraine days**: the chat function is designed to capture data daily. This is critical because it also logs patient data outside migraine episodes, which is essential for predicting migraine onset.
 
 **Who benefits from it?**
 
 * **Migraine patients** benefit by gaining better insights into their migraine patterns, with the potential to predict the next migraine onset.
-* **Physicians** are supported when diagnosing thanks to the statistics and visualizations providing an overview of the patient's symptoms.
+* **Physicians** are supported in diagnosis thanks to the statistics and visualizations that provide an overview of the patient's symptoms.
 * **Researchers** might also benefit in the long run by having access to large real-world migraine datasets, which can be of great value for better understanding this pathology and improving treatment.
 
 **Additional materials**
@@ -49,10 +49,10 @@ Here, the user can simply talk to the LLM assistant, which is designed to nudge 
 #### Backend
 
 1. The audio is sent to the backend via `fastapi` where it is in turn sent to the **Groq API** operating a **speech-to-text (stt)** with the model `openai/whisper-large-v3`.
-2. The resulting transcription is then sent to the **OpenAI API**, where the model `gpt-5.4-nano` analyzes the response and provides (i) a `.json` structure containing the extracted information and (ii) a conversational response nudging the user to complete missing information.
-3. The LLM's response is then sent to the **Groq API**, which operates a **text-to-speech (tts)** model, `canopylabs/orpheus-v1-english`, that is in turn sent to the frontend and back to the user.
+2. The resulting transcription is then sent to the **OpenAI API**, where the model `gpt-5.4-nano` analyzes the response and provides (i) a JSON structure containing the extracted information and (ii) a conversational response nudging the user to complete missing information.
+3. The LLM's response is then sent to the **Groq API**, which operates a **text-to-speech (tts)** model, `canopylabs/orpheus-v1-english`, and is then sent to the frontend and back to the user.
 
-Several conversation turns can take place. The conversation terminates when either of these are true:
+Several conversation turns can take place. The conversation terminates when either of the following is true:
 * the user requests the conversation to end
 * all information about the current day has been logged by the user
 Eventually, the extracted data is saved into a **PostgreSQL** database.
@@ -70,11 +70,11 @@ Eventually, the extracted data is saved into a **PostgreSQL** database.
 
 #### Frontend
 
-The user can view their logged data thanks to a series of visualizations aimed at providing detailed insights into the user's typical migraine patterns and which signs are most indicative of an incoming migraine episode.
+The user can view their logged data through a series of visualizations aimed at providing detailed insights into typical migraine patterns and which signs are most indicative of an incoming migraine episode.
 
 #### Backend
 
-The data from the last year, including relevant statistics, is retrieved from the PostgreSQL database via API call and visualized with `plotly`.
+The data from the last year, including relevant statistics, is retrieved from the PostgreSQL database via an API call and visualized with `plotly`.
 
 ## Predictions tab
 
@@ -111,8 +111,8 @@ A first step in experimenting with modelling was generating synthetic user data 
 
 **Modelling**
 
-Two different types of model (XGBoost, Logistic Regression) are built for each individual user. The task is a binary classification: will the user get a migraine the next day (yes: 1 / no: 0). All available user data is used as training, being mindful of certain intrinsic properties of the data:
-- the data is a **time series**, so specific measures are taken to avoid data-leakage
+Two different types of model (XGBoost and Logistic Regression) are built for each individual user. The task is a binary classification: will the user get a migraine the next day (yes: 1 / no: 0)? All available user data is used for training, while taking into account certain intrinsic properties of the data:
+- the data is a **time series**, so specific measures are taken to avoid data leakage
 - there is a major **class imbalance**
 - each user has a **small dataset**, preventing the use of more complex models such as DNNs.
 - it is desirable to favor models allowing some degree of **interpretability**.
@@ -171,7 +171,6 @@ External services
 * openai
     * gpt-5.4-nano
 * langfuse
-
 
 
 

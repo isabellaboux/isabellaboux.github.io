@@ -18,7 +18,7 @@ mermaid:
 
 Indirect language (e.g., *“I am on a diet”* as a refusal of a piece of cake) introduces a gap between the literal meaning of a sentence and its communicative intent.
 
-With this project I asked whether indirectness can be captured through **quantifiable cognitive features** and modeled using statistical and multivariate techniques. In addition, it investigates whether  indirectness can be treated as a **latent construct** reflected in multiple observable dimensions.
+With this project, I asked whether indirectness can be captured through **quantifiable cognitive features** and modeled using statistical and multivariate techniques. In addition, I investigated whether indirectness can be treated as a **latent construct** reflected in multiple observable dimensions.
 
 I showed human participants examples of direct and indirect replies to questions and asked them to provide various ratings about the reply. I analyzed the ratings and derived measures using **linear mixed-effects models (LMMs)**, **correlation analysis**, and **principal component analysis (PCA)**.
 
@@ -38,7 +38,7 @@ Because we know that ratings can be affected by very low-level aspects of a sent
 | direct       | **Is your cat hurt?**                     | information query   | **It got wounded.**                  | statement              | yes                          |
 | indirect     | **Are you bringing your cat to the vet?** | information query   | **It got wounded.**                  | statement               | yes                          |
 
-To remain comparable with previous studies investigating indirectness, I also included a set of direct and indirect replies, that while having the same sentence, convey a different pragmatic meaning (direct statement vs. indirect rejection or acceptance of an offer).
+To remain comparable with previous studies investigating indirectness, I also included a set of direct and indirect replies that, while containing the same sentence, convey a different pragmatic meaning (direct statement vs. indirect rejection or acceptance of an offer).
 
 #### non-SA-matched set
 
@@ -93,12 +93,12 @@ The question/reply pairs were presented in a randomized order and the direction 
   * “Direct” items were rated as more indirect than “indirect” ones
   * Function ratings did not align with expected yes/no interpretation
 * I re-inverted ratings with inverted Likert anchors, ensuring consistent directionality across all scales
-* I computed a new variable, **Certainty (CER-R)**, was derived from function ratings:
+* I computed a new variable, **Certainty (CER-R)**, derived from function ratings:
   * Computed as the **rectified distance from the scale midpoint**
   * Shifted to align with other scales → final range: **1–4**
   * Interpretation:
     * extreme responses → high certainty
-    * Central values → low certainty
+    * central values → low certainty
 
 
 ## STEP 4: Analysis and results
@@ -107,7 +107,7 @@ The question/reply pairs were presented in a randomized order and the direction 
 
 #### Do the various ratings differ as a function of in/directness, SA-matching and polarity?
 
-Because I have a hierarchical dataset with the same reply presented to different participants and the same participant rating different replies, I modeled each rating dimension in **R** using **linear mixed-effects models** via the `lme4` package. 
+Because I had a hierarchical dataset with the same reply presented to different participants and the same participant rating different replies, I modeled each rating dimension in **R** using **linear mixed-effects models** via the `lme4` package.
 
 ```r
 RATING ~ InDirectness * Polarity * SA_matching + (1 | Subject) + (1 | Item)
@@ -139,7 +139,7 @@ The strongest pattern for all ratings is that indirect replies are perceived as 
 
 Because the prior analysis showed striking parallels between features, I asked whether these are correlated with one another. For each reply, I calculated its average score for each feature and performed pairwise Pearson correlations between all features. Due to the number of correlations, a Bonferroni correction was applied.
 
-All features are strongly (all R>0.8) and significantly (all p<0.001) linearly correlated with one another.
+All features are strongly (all R > 0.8) and significantly (all p < 0.001) linearly correlated with one another.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -175,20 +175,26 @@ Interestingly, a single component clearly explains 92% of variance in the featur
     **Figure 3**: Scree plot depicting the Eigenvalues of each principal component identified by principal component analysis (PCA), together with the respective percentage of explained variance. The red dotted line represents Kaiser’s criterion at Eigenvalue 1.
 </div>
 
-
-## Key findings
-
 ---
 
-* Indirect replies are:
-  * Less predictable
-  * Less coherent
-  * Less semantically aligned
-  * Interpreted with lower certainty
+## Conclusion
 
-* Strong correlations and PCA results converge on:
-  → **A shared latent cognitive dimension underlying indirectness**
+> Compared to direct replies, indirect replies are less predictable, less coherent, and less semantically aligned with their context question. They are also interpreted with less certainty. Strong correlations and the PCA results converge on a shared latent cognitive dimension underlying indirectness.
+
+---
 
 ## Tech Stack
 
----
+Python
+- `psychopy` for programming the computerized rating task
+
+R
+- `lme4` for linear and generalized mixed-effects models
+- `emmeans` for post-hoc comparisons
+- `ggplot2` for visualization
+
+Matlab
+- for visualization
+
+SPSS
+- for PCA
