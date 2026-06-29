@@ -162,7 +162,8 @@
     "name": "Deployment",
     "keywords": [
       "Google Cloud Platform",
-      "Docker"
+      "Docker",
+      "FastAPI"
     ]
   },
   {
@@ -191,17 +192,6 @@
     ]
   },
   {
-    "name": "Data Science & Analysis",
-    "keywords": [
-      "Time-series analysis",
-      "Signal processing",
-      "Feature engineering",
-      "Data visualization",
-      "Statistical modeling",
-      "Real-world human data"
-    ]
-  },
-  {
     "name": "Machine Learning & AI",
     "keywords": [
       "Linear regression",
@@ -214,33 +204,45 @@
       "Clustering (k-means)",
       "Deep neural networks (DNNs)",
       "Convolutional neural networks (CNNs)",
-      "Large language models (LLMs)",
-      "Retrieval-augmented generation (RAG)",
-      "Model fine-tuning"
+      "Large language models (LLMs)"
     ]
   },
   {
     "name": "Statistics & Inference",
     "keywords": [
       "Hypothesis testing",
-      "ANOVA",
-      "t-tests",
+      "ANOVA (incl. one-way, repeated measures and mixed-effects)",
+      "t-tests (incl. single sample, dependent and independent samples)",
       "Correlation",
       "Linear regression",
       "Logistic regression",
-      "Hierarchical linear modeling / Linear mixed modeling"
+      "Hierarchical linear modeling / Linear mixed modeling",
+      "Power analysis"
+    ]
+  },
+  {
+    "name": "Other data-related skills",
+    "keywords": [
+      "Time-series analysis",
+      "Signal processing",
+      "Feature engineering",
+      "Multi-channel processing",
+      "Data visualization"
+    ]
+  },
+  {
+    "name": "Experimental Methods",
+    "keywords": [
+      "Experimental design",
+      "Causal inference via controlled experiments",
+      "Control for extraneous variables"
     ]
   },
   {
     "name": "Neurotechnology & Experimental Methods",
     "keywords": [
-      "Transcranial magnetic stimulation",
-      "EEG analysis",
-      "ERP analysis",
-      "ICA (artifact removal)",
-      "Multichannel signal analysis",
-      "Experimental design",
-      "Causal inference via controlled experiments"
+      "Transcranial magnetic stimulation (TMS)",
+      "Electroeencephalography (EEG), incl. ERP analysis and ICA (artifact removal)"
     ]
   },
   {
@@ -250,7 +252,9 @@
       "STATISTICA",
       "Jamovi",
       "Microsoft Excel",
-      "Google Sheets"
+      "Google Sheets",
+      "G*power",
+      "ANOVA_power"
     ]
   }
 ],
