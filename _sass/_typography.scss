@@ -36,8 +36,17 @@ table {
 }
 
 .post article table {
+  border: 1px solid var(--global-divider-color);
+  border-collapse: collapse;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  width: 100%;
+}
+
+.post article table th,
+.post article table td {
+  border: 1px solid var(--global-divider-color);
+  padding: 0.45rem 0.75rem;
 }
 
 .post article table + p,
