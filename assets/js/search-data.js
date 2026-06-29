@@ -409,29 +409,29 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-our-brain-communicates-before-we-even-start-speaking",
-          title: 'Our brain communicates before we even start speaking',
-          description: "an other project with a background image and giscus comments",
+          section: "News",},{id: "projects-does-our-brain-communicate-before-we-even-start-speaking",
+          title: 'Does our brain communicate before we even start speaking?',
+          description: "[]",
           section: "Projects",handler: () => {
               window.location.href = "/projects/SAper/";
             },},{id: "projects-time-course-of-brain-processing-of-emotional-communication",
           title: 'Time-course of brain processing of emotional communication',
-          description: "EEG-based detection of communicative intent in language",
+          description: "[]",
           section: "Projects",handler: () => {
               window.location.href = "/projects/exSA-EEG/";
             },},{id: "projects-the-latent-structure-of-indirect-language",
           title: 'The latent structure of indirect language',
-          description: "Cognitive properties of indirect replies are rated and related to one another to identify the latent structure of indirectness.",
+          description: "[]",
           section: "Projects",handler: () => {
               window.location.href = "/projects/iCO-Eval/";
-            },},{id: "projects-investigting-the-causal-role-of-rtpj-brain-area-for-undestanding-indirect-speech",
-          title: 'Investigting the causal role of rTPJ brain area for undestanding indirect speech',
-          description: "Does manipulating activation in the rTPJ brain area causes changes in how people understand indirect language.",
+            },},{id: "projects-does-manipulating-activation-in-the-rtpj-brain-area-cause-changes-in-how-people-understand-indirect-language",
+          title: 'Does manipulating activation in the rTPJ brain area cause changes in how people...',
+          description: "[]",
           section: "Projects",handler: () => {
               window.location.href = "/projects/iCO-TMS/";
             },},{id: "projects-migrainechat",
           title: 'MigraineChat',
-          description: "MigraineChat is a prototype for a voice-first app that allows migraine patients to log their health status daily and generate patient-specific predictions about their likelihood of getting a migraine on the next day.",
+          description: "[]",
           section: "Projects",handler: () => {
               window.location.href = "/projects/migrainechat/";
             },},{id: "teachings-data-science-fundamentals",
