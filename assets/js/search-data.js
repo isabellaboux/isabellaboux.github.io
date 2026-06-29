@@ -414,11 +414,6 @@ ninja.data = [{
           description: "an other project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/SAper/";
-            },},{id: "projects-dummy",
-          title: 'Dummy',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/dummy/";
             },},{id: "projects-time-course-of-brain-processing-of-emotional-communication",
           title: 'Time-course of brain processing of emotional communication',
           description: "EEG-based detection of communicative intent in language",
