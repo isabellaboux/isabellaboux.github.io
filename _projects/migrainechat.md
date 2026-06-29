@@ -1,7 +1,7 @@
 ---
 layout: page
 title: MigraineChat
-description: MigraineChat is a prototype for a voice-first app that allows migraine patients to log their health status daily and generate patient-specific predictions about their likelihood of getting a migraine on the next day.
+description: []
 img: assets/img/migrainechat_cover.png
 importance: 4
 category: fun

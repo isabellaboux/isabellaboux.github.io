@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Our brain communicates before we even start speaking
-description: an other project with a background image and giscus comments
+title: Does our brain communicate before we even start speaking?
+description: []
 img: assets/img/9.jpg
 importance: 4
 category: work

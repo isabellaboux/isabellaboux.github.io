@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Time-course of brain processing of emotional communication
-description: EEG-based detection of communicative intent in language
+description: []
 img: assets/img/exSA-EEG_FIG3A.jpg
 importance: 1
 category: work
