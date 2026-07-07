@@ -2,7 +2,7 @@
 layout: page
 title: How do LLMs and humans compare in processing indirect speech?
 description: []
-img: assets/img/placeholder.svg
+img: assets/img/isa-llm_cover.png
 importance: 5
 category: miscellaneous
 tags: [LLM, python, visualization, rmANOVA, inferential statistics, experimental design]
