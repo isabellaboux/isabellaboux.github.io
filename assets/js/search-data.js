@@ -409,7 +409,12 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-who-are-you-talking-to-how-your-conversational-partner-affects-your-word-choices",
+          section: "News",},{id: "projects-how-do-llms-and-humans-compare-in-processing-indirect-speech",
+          title: 'How do LLMs and humans compare in processing indirect speech?',
+          description: "[]",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ISA-LLM/";
+            },},{id: "projects-who-are-you-talking-to-how-your-conversational-partner-affects-your-word-choices",
           title: 'Who are you talking to? How your conversational partner affects your word choices...',
           description: "[]",
           section: "Projects",handler: () => {
