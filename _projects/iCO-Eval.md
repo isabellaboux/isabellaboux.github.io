@@ -5,7 +5,7 @@ description: []
 img: assets/img/iCO-Eval2_Fig3-4.jpg
 importance: 2
 category: work
-tags: [language, PCA, linear mixed modelling, inferential statistics, experimental design, ratings, matlab, SPSS, visualization]
+tags: [language, PCA, linear mixed modelling, inferential statistics, experimental design, ratings, matlab, SPSS, visualization, R]
 related_publications:
   - Boux2022
 mermaid:

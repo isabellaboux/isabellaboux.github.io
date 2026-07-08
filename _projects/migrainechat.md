@@ -5,7 +5,7 @@ description: []
 img: assets/img/migrainechat_cover.png
 importance: 4
 category: miscellaneous
-tags: [LLM, fastAPI, PostgreSQL, data simulation, XGBoost, logistic regression, scikit-learn, streamlit, visualization, plotly, synthetic data generation, speech-to-text, text-to-speech]
+tags: [LLM, fastAPI, PostgreSQL, data simulation, XGBoost, logistic regression, scikit-learn, streamlit, visualization, plotly, synthetic data generation, speech-to-text, text-to-speech, python]
 ---
 
 ## Overview
