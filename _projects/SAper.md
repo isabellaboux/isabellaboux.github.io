@@ -6,6 +6,9 @@ img: assets/img/SAper_FIG_1.jpeg
 importance: 4
 category: work
 tags: [EEG, biosignals, time series, signal processing, visualization, rmANOVA, inferential statistics, experimental design, experimentation, matlab]
+mermaid:
+  enabled: true
+  zoomable: true
 ---
 
 ## Overview
