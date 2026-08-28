@@ -5,7 +5,7 @@ description: []
 img: assets/img/iCO-TMS.png
 importance: 3
 category: work
-tags: [TMS, experimental design, linear mixed modelling, logistic regression, linear regression, inferential statistics, causal inference, language, NLP, matlab, R, python, visualization, experimentation]
+tags: [TMS, behavioral, experimentation and experimental design, linear mixed modelling, logistic regression, linear regression, inferential statistics, NLP, matlab, R, python, visualization, ggplot2]
 giscus_comments: true
 mermaid:
   enabled: true

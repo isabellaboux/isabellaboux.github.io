@@ -5,7 +5,7 @@ description: []
 img: assets/img/placeholder.svg
 importance: 5
 category: work
-tags: [EEG, behavioral,  biosignals, time series, signal processing, visualization, linear mixed modelling, linear regression, logistic regression, language, inferential statistics, experimental design, matlab, R, Python, experimentation]
+tags: [EEG, behavioral,  biosignals, time series, signal processing, visualization, linear mixed modelling, linear regression, logistic regression, inferential statistics, experimentation and experimental design, matlab, R, ggplot2]
 ---
 
 ## Overview
