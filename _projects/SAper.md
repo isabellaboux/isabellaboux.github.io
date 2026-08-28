@@ -161,7 +161,7 @@ The spatial distribution of the effect is visible in **Figure 1 (bottom panel)**
 ## Tech Stack
 
 Python
-- `psychopy` for coordinating the EEG and audio acquisition
+- `python` and tehlibrary `psychopy` for coordinating the EEG and audio acquisition
 - `MATLAB`and the `eeglab` toolbox for preprocessing and visualizing EEG data
 - `STATISTICA` software for inferential statistics
 - `Audacity` for audio processing
