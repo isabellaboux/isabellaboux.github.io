@@ -2,7 +2,7 @@
 layout: page
 title: Do our brains communicate before we even start speaking?
 description: []
-img: assets/img/SAper_FIG_1.jpg
+img: assets/img/SAper_FIG_2.jpg
 importance: 4
 category: work
 tags: [EEG, biosignals, time series, signal processing, visualization, rmANOVA, inferential statistics, experimentation and experimental design, matlab]
@@ -40,7 +40,7 @@ The study combined EEG recordings and speech audio collected during a controlled
 
 <div class="col">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/SAper_FIG_1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/SAper_FIG_1.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
