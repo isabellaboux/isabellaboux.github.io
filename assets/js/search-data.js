@@ -419,8 +419,8 @@ ninja.data = [{
           description: "[]",
           section: "Projects",handler: () => {
               window.location.href = "/projects/LEALCO/";
-            },},{id: "projects-does-our-brain-communicate-before-we-even-start-speaking",
-          title: 'Does our brain communicate before we even start speaking?',
+            },},{id: "projects-do-our-brains-communicate-before-we-even-start-speaking",
+          title: 'Do our brains communicate before we even start speaking?',
           description: "[]",
           section: "Projects",handler: () => {
               window.location.href = "/projects/SAper/";
