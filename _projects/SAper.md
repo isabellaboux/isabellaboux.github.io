@@ -25,7 +25,7 @@ Because the spoken words and much of the physical setup were closely controlled 
 
 Further resources:
 
-- **Publication:** Boux, I., Tomasello, R., Grisoni, L., & Pulvermüller, F. (2021). Brain signatures predict communicative function of speech production in interaction. Cortex, 135, 127–145. [https://doi.org/10.1016/j.cortex.2020.11.008](https://doi.org/10.1016/j.cortex.2020.11.008)
+- **Publication:** Boux, I.\*, Tomasello, R.\*, Grisoni, L., & Pulvermüller, F. (2021). Brain signatures predict communicative function of speech production in interaction. Cortex, 135, 127–145. [https://doi.org/10.1016/j.cortex.2020.11.008](https://doi.org/10.1016/j.cortex.2020.11.008) * equal contributions
 
 ## Data Collection
 
