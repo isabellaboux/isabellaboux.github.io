@@ -2,7 +2,7 @@
 layout: page
 title: Does our brain communicate before we even start speaking?
 description: []
-img: assets/img/SAper_FIG1.jpeg
+img: assets/img/SAper_FIG_1.jpeg
 importance: 4
 category: work
 tags: [EEG, biosignals, time series, signal processing, visualization, rmANOVA, inferential statistics, experimental design, experimentation, matlab]
@@ -142,10 +142,10 @@ The spatial distribution of the effect is visible in **Figure 1 (bottom panel)**
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/SAper_FIG1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/SAper_FIG_1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/SAper_FIG2.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/SAper_FIG_2.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
