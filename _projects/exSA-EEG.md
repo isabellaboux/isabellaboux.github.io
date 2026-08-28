@@ -5,7 +5,7 @@ description: []
 img: assets/img/exSA-EEG_FIG3A.jpg
 importance: 1
 category: work
-tags: [EEG, signal processing, visualization, rmANOVA, inferential statistics, experimental design, python]
+tags: [EEG,  biosignals, time series, signal processing, visualization, rmANOVA, inferential statistics, experimental design, python, experimentation]
 related_publications:
   - boux_instantaneous_2026
 mermaid:
