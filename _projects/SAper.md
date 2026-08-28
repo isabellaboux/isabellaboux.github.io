@@ -97,17 +97,16 @@ subgraph E["Averaging"]
     E1 --> E2
 end
 
-subgraph H["Feature Extraction for ANOVA"]
+subgraph H["Feature Extraction"]
     H1["Extract and average signal in selected time windows<br/>relative to speech onset:<br/>TW1: −1000 to −800 msec,<br/>TW2: −800 to −600 msec,<br/>TW3: −600 to −400 msec,<br/>TW4: −400 to −200 msec,<br/>TW5: −200 to 0 msec"]
     H2["Extract 9 spatial locations<br/>left anterior (LA: F7, F5, F3, FC5)<br/>midline anterior (MA: F1, Fz, F2, FCz)<br/>right anterior (RA: F4, F6, F8, FC6),<br/>left central (LC: T7, C5, C3, CP5)<br/>midline central (MC: C1, Cz, C2, CPz)<br/>right central (RC: C4, C6, T8, CP6)<br/>left posterior (LP: P7, P5, P3, PO7),<br/>midline posterior (MP: P1, Pz, P2, POz)<br/>right posterior (RP: P4, P6, P8, PO8). "]
+    H3["Select broad pre-speech time window<br/>-1000 ms to speech onset"]
+    H4["Select broad channel set:<br/> F7, F5, F3, F1, Fz, F2, F4, F6, F8,<br/>FC5, FC3, FC1, FCz, FC2, FC4, FC6, <br/>T7, C5, C3, C1, Cz, C2, C4, C6, T8,<br/>CP5, CP3, CP1, CPz, CP2, CP4, CP6,<br/>P7, P5, P3, P1, Pz, P2, P4, P6, P8, PO7, POz"]
     H1 --> H2
+    H3 --> H4
 end
 
-subgraph I["Feature Extraction for CBPT"]
-    I1["Select broad channel set:<br/> F7, F5, F3, F1, Fz, F2, F4, F6, F8,<br/>FC5, FC3, FC1, FCz, FC2, FC4, FC6, <br/>T7, C5, C3, C1, Cz, C2, C4, C6, T8,<br/>CP5, CP3, CP1, CPz, CP2, CP4, CP6,<br/>P7, P5, P3, P1, Pz, P2, P4, P6, P8, PO7, POz"]
-    I2["Select broad pre-speech time window<br/>-1000 ms to speech onset"]
-    I1 --> I2
-end
+
 
 subgraph F["Statistical Analysis"]
     F1["Repeated-measures ANOVA<br/>test condition effects on ERP amplitudes"]
@@ -129,9 +128,10 @@ D5 --> E1
 
 E2 --> H1
 H2 --> F1
+H4 --> F3
 
-E2 --> I1
-I2 --> F3
+E2 --> H3
+H4 --> F3
 ```
 
 ## Results
@@ -143,7 +143,7 @@ The repeated-measures ANOVA supported this result, showing a significant main ef
 The spatial distribution of the effect is visible in **Figure 1 (bottom panel)**: the pre-speech negativity was strongest over **fronto-central scalp regions**, with a polarity reversal over posterior electrodes. Together, the analyses indicate that the communicative function of an upcoming utterance can be distinguished from EEG activity several hundred milliseconds before the speaker begins to talk.
 
 
-<div class="row">
+<div class="col">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/SAper_FIG_1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
