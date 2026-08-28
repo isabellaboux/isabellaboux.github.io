@@ -42,25 +42,25 @@ The EEG data from the 64 channels is preprocessed according to standard event-re
 ```mermaid
 flowchart TD
 
-subgraph A[Data Acquisition]
-    A1[64-channel EEG<br/>active electrodes]
-    A2[Sampling rate: 500 Hz]
+subgraph A["Data Acquisition"]
+    A1["64-channel EEG<br/>active electrodes"]
+    A2["Sampling rate: 500 Hz"]
     A1 --> A2
 end
 
-subgraph B[EEG signal cleaning]
-    B1[Downsampling<br/>500 -> 250 Hz]
-    B2[Filtering<br/>Band-pass filter: 0.1-30 Hz]
-    B3[Compute vertical and horizontal EOG signals<br/>from ocular electrodes]
-    B4[Visual channel QC<br/>remove noisy EEG channels]
-    B5[ICA decomposition<br/>35 components]
-    B6{Artifact component?}
-    B7[Ocular artifact<br/>abs(r) > 0.3 with EOG]
-    B8[Articulation / muscle artifact<br/>abs(r) > 0.3 with FT7, FT8,<br/>or lower EOG]
-    B9[Remove component]
-    B10[Retain component]
-    B11[Reconstruct cleaned EEG]
-    B12[Interpolate removed channels]
+subgraph B["EEG signal cleaning"]
+    B1["Downsampling<br/>500 -> 250 Hz"]
+    B2["Filtering<br/>Band-pass filter: 0.1-30 Hz"]
+    B3["Compute vertical and horizontal EOG signals<br/>from ocular electrodes"]
+    B4["Visual channel QC<br/>remove noisy EEG channels"]
+    B5["ICA decomposition<br/>35 components"]
+    B6{"Artifact component?"}
+    B7["Ocular artifact<br/>abs(r) > 0.3 with EOG"]
+    B8["Articulation / muscle artifact<br/>abs(r) > 0.3 with FT7, FT8,<br/>or lower EOG"]
+    B9["Remove component"]
+    B10["Retain component"]
+    B11["Reconstruct cleaned EEG"]
+    B12["Interpolate removed channels"]
 
     B1 --> B2 --> B3 --> B4 --> B5 --> B6
     B6 -->|ocular| B7 --> B9
@@ -71,49 +71,49 @@ subgraph B[EEG signal cleaning]
     B11 --> B12
 end
 
-subgraph G[Audio Acquisition]
-    G1[1-channel audio recording]
+subgraph G["Audio Acquisition"]
+    G1["1-channel audio recording"]
 end
 
-subgraph C[Audio preprocessing]
-    C1[Inspect audio waveform]
-    C2[Visually detect voice onset<br/>for each trial]
-    C3[Validate spoken response<br/>keep correct trials only]
+subgraph C["Audio preprocessing"]
+    C1["Inspect audio waveform"]
+    C2["Visually detect voice onset<br/>for each trial"]
+    C3["Validate spoken response<br/>keep correct trials only"]
     C1 --> C2 --> C3
 end
 
-subgraph D[Signal segmentation]
-    D1[Align voice-onset markers<br/>with cleaned EEG]
-    D2[Response-locked segmentation<br/>-2000 to +500 ms]
-    D3[Baseline correction<br/>-2000 to -1800 ms]
-    D4[Reject trials exceeding ±150 uV<br/>before voice onset]
-    D5[Participant-level QC<br/>exclude datasets with excessive trial loss<br/>or extreme ERP values]
+subgraph D["Signal segmentation"]
+    D1["Align voice-onset markers<br/>with cleaned EEG"]
+    D2["Response-locked segmentation<br/>-2000 to +500 ms"]
+    D3["Baseline correction<br/>-2000 to -1800 ms"]
+    D4["Reject trials exceeding ±150 uV<br/>before voice onset"]
+    D5["Participant-level QC<br/>exclude datasets with excessive trial loss<br/>or extreme ERP values"]
     D1 --> D2 --> D3 --> D4 --> D5
 end
 
-subgraph E[Averaging]
-    E1[Average by subject and condition<br/>2 conditions: naming, requesting]
-    E2[Grand average across subjects]
+subgraph E["Averaging"]
+    E1["Average by subject and condition<br/>2 conditions: naming, requesting"]
+    E2["Grand average across subjects"]
     E1 --> E2
 end
 
-subgraph H[Feature Extraction for ANOVA]
-    H1[Extract and average signal in selected time windows<br/>relative to speech onset:<br/>TW1: −1000 to −800 msec,<br/>TW2: −800 to −600 msec,<br/>TW3: −600 to −400 msec,<br/>TW4: −400 to −200 msec,<br/>TW5: −200 to 0 msec]
-    H2[Extract 9 spatial locations<br/>left anterior (LA: F7, F5, F3, FC5) midline anterior (MA: F1, Fz, F2, FCz), right anterior (RA: F4, F6, F8, FC6),<br/>left central (LC: T7, C5, C3, CP5), midline central (MC: C1, Cz, C2, CPz), right central (RC: C4, C6, T8, CP6), left posterior (LP: P7, P5, P3, PO7),<br/>midline posterior (MP: P1, Pz, P2, POz) and right posterior (RP: P4, P6, P8, PO8). ]
+subgraph H["Feature Extraction for ANOVA"]
+    H1["Extract and average signal in selected time windows<br/>relative to speech onset:<br/>TW1: −1000 to −800 msec,<br/>TW2: −800 to −600 msec,<br/>TW3: −600 to −400 msec,<br/>TW4: −400 to −200 msec,<br/>TW5: −200 to 0 msec"]
+    H2["Extract 9 spatial locations<br/>left anterior (LA: F7, F5, F3, FC5)<br/>midline anterior (MA: F1, Fz, F2, FCz)<br/>right anterior (RA: F4, F6, F8, FC6),<br/>left central (LC: T7, C5, C3, CP5)<br/>midline central (MC: C1, Cz, C2, CPz)<br/>right central (RC: C4, C6, T8, CP6)<br/>left posterior (LP: P7, P5, P3, PO7),<br/>midline posterior (MP: P1, Pz, P2, POz)<br/>right posterior (RP: P4, P6, P8, PO8). "]
     H1 --> H2
 end
 
-subgraph I[Feature Extraction for CBPT]
-    I1[Select broad channel set:<br/> F7, F5, F3, F1, Fz, F2, F4, F6, F8, FC5, FC3, FC1, FCz, FC2, FC4, FC6, Central: T7, C5, C3, C1, Cz, C2, C4, C6, T8, CP5, CP3, CP1, CPz, CP2, CP4, CP6, Posterior: P7, P5, P3, P1, Pz, P2, P4, P6, P8, PO7, POz]
-    I2[Select broad pre-speech time window<br/>-1000 ms to speech onset]
+subgraph I["Feature Extraction for CBPT"]
+    I1["Select broad channel set:<br/> F7, F5, F3, F1, Fz, F2, F4, F6, F8,<br/>FC5, FC3, FC1, FCz, FC2, FC4, FC6, <br/>T7, C5, C3, C1, Cz, C2, C4, C6, T8,<br/>CP5, CP3, CP1, CPz, CP2, CP4, CP6,<br/>P7, P5, P3, P1, Pz, P2, P4, P6, P8, PO7, POz"]
+    I2["Select broad pre-speech time window<br/>-1000 ms to speech onset"]
     I1 --> I2
 end
 
-subgraph F[Statistical Analysis]
-    F1[Repeated-measures ANOVA<br/>test condition effects on ERP amplitudes]
-    F2[Post-hoc comparisons<br/>corrected]
-    F3[Cluster-based permutation test CBPT<br/>spatiotemporal clustering<br/>5000 permutations]
-    F4[Robustness CBPT<br/>restricted pre-speech window]
+subgraph F["Statistical Analysis"]
+    F1["Repeated-measures ANOVA<br/>test condition effects on ERP amplitudes"]
+    F2["Post-hoc comparisons<br/>corrected"]
+    F3["Cluster-based permutation test CBPT<br/>spatiotemporal clustering<br/>5000 permutations"]
+    F4["Robustness CBPT<br/>restricted pre-speech window"]
 
     F1 --> F2
     F3 --> F4
@@ -158,18 +158,12 @@ The spatial distribution of the effect is visible in **Figure 1 (bottom panel)**
 ## Conclusion
 
 > This project shows that communicative intent leaves a measurable signature in brain activity already before speech begins.
----
+
 
 ## Tech Stack
 
 Python
-- `psychopy` for programming the computerized tasks
-
-Matlab
-- `eeglab` for preprocessing and visualizing EEG data
-
-Inferential statistics
-- `STATISTICA` software
-
-Audio processing:
-- `Audacity`
+- `psychopy` for coordinating the EEG and audio acquisition
+- `MATLAB`and the `eeglab` toolbox for preprocessing and visualizing EEG data
+- `STATISTICA` software for inferential statistics
+- `Audacity` for audio processing
